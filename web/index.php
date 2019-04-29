@@ -17,9 +17,9 @@
     web development classes. I work at a company called Avercast in Rigby, ID. We are in the process of building a web 
     application to replace their legacy system. We are working with Angular for the client side and Java for the server 
     side of the application. I enjoy being outside hiking and enjpoying the great outdoors the image below is of me and my 
-    son on a hike to a waterfall. I look forward to working with you all and learning from you! 
+    son on a hiking though our hikes arent this dangerous most of the time. I look forward to working with you all and learning from you! 
   </p>
-  <img src="" alt="Hiking">
+  <img src="/web/img/hinking.jpg" alt="Hiking">
   <h2><a href="/assignments/assignments.html">Assignments Page</a></h2>
 </main>
 
