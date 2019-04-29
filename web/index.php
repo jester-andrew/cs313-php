@@ -19,7 +19,7 @@
     side of the application. I enjoy being outside hiking and enjpoying the great outdoors the image below is of me and my 
     son on a hiking though our hikes arent this dangerous most of the time. I look forward to working with you all and learning from you! 
   </p>
-  <img src="/web/img/hinking.jpg" alt="Hiking">
+  <img src="/img/hinking.jpg" alt="Hiking">
   <h2><a href="/assignments/assignments.html">Assignments Page</a></h2>
 </main>
 
