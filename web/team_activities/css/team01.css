@@ -1,0 +1,25 @@
+.blue,
+.green,
+.red {
+    width: 100px;
+    height: 100px;
+}
+
+.blue {
+    background-color: blue;
+    font-size: 1.5em;
+}
+
+.red {
+    background-color: red;
+    font-size: 2em;
+}
+
+.green {
+    background-color: green;
+    font-size: 3em;
+}
+
+div:hover {
+    font-weight: bold;
+}
