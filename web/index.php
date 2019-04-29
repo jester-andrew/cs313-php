@@ -20,7 +20,7 @@
     son on a hike to a waterfall. I look forward to working with you all and learning from you! 
   </p>
   <img src="" alt="Hiking">
-  <h2><a href="/assignments/assignments.php">Assignments Page</a></h2>
+  <h2><a href="/assignments/assignments.html">Assignments Page</a></h2>
 </main>
 
 </body>
