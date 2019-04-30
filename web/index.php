@@ -23,7 +23,7 @@
             hikes arent this dangerous most of the time. I look forward to working with you all and learning from you!
         </p>
         <img src="/img/hinking.jpg" alt="Hiking">
-        <h2><a href="/assignments/assignments.html">Assignments</a></h2>
+        <h2><a href="/assignments/assignments.php">Assignments</a></h2>
     </main>
     <footer>
 
