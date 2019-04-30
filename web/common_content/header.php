@@ -5,6 +5,7 @@
             </ul>
 
             <span><?php 
+                date_default_timezone_set("America/Denver");
                 echo date("l F j, Y");
             ?></span>
 
