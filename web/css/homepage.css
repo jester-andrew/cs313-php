@@ -80,6 +80,7 @@ nav li {
 
 nav li a:hover {
     opacity: .5;
+    text-decoration: underline;
 }
 
 nav {
