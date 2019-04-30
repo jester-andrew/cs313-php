@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <header>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/common_content/header.php'; ?>
+    </header>
     <main>
         <h1>Web Engineering II</h1>
         <h2>About Me</h2>
@@ -22,6 +25,9 @@
         <img src="/img/hinking.jpg" alt="Hiking">
         <h2><a href="/assignments/assignments.html">Assignments</a></h2>
     </main>
+    <footer>
+
+    </footer>
 
 </body>
 

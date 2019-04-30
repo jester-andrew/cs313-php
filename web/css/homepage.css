@@ -60,3 +60,34 @@ h2:nth-of-type(2):hover {
 h2:nth-of-type(2) a {
     text-decoration: none;
 }
+
+nav {
+    background-color: blue;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav li {
+    margin-left: 1em;
+    display: inline;
+}
+
+nav li a:hover {
+    opacity: .5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    color: white;
+    font-size: 1.2em;
+}
