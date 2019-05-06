@@ -14,7 +14,9 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/common_content/header.php'; ?>
     </header>
     <main>
-        <h1>Assignments coming soon!</h1>
+        <ul>
+            <li><a href="./shopping_cart/browse.php">Week03</a></li>
+        </ul>
     </main>
     <footer>
 
