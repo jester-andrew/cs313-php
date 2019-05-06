@@ -58,6 +58,6 @@
     <input type="button" value="Add to Cart" id="btn6">
 </form>
 </main>
-    
+    <script src="./scripts.js"></script>
 </body>
 </html>
