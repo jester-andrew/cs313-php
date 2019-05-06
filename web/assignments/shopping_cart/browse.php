@@ -25,7 +25,7 @@
     <img src="./img/led.png" alt="led">
     Quanity
     <input type="text" name="value" id="val1" value="1">
-    <input type="button" value="Add to Cart" id="btn1">
+    <input type="button" value="Add to Cart" id="btn1" onclick="addToCart("led")">
 
     <h3>Incandescent Bulbs</h3>
     <img src="./img/inc.png" alt="Incandescent">
