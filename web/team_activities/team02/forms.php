@@ -16,10 +16,10 @@
     <label for="email">Email</label>
     <input type="text" name="email" id="email">
     <br>
-    Computer Science<input type="radio" name="major" value="Computer Science"><br>
-    WDD<input type="radio" name="major" value="WDD"><br>
-    CIT<input type="radio" name="major" value="CIT"><br>
-    Software Engineering<input type="radio" name="major" value="Software Engineering"><br>
+    <input type="radio" name="major" value="Computer Science">Computer Science<br>
+    <input type="radio" name="major" value="WDD">WDD<br>
+    <input type="radio" name="major" value="CIT">CIT<br>
+    <input type="radio" name="major" value="Software Engineering">Software Engineering<br>
 
     <label for="comments">Comment</label>
     <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
