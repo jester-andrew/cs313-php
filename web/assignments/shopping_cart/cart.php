@@ -19,7 +19,7 @@ session_start();
         $obj = json_decode($item, true);
     
         var_dump($obj);
-        $table .= '<tr><td>'. print $obj->name .'</td><td>'. print $obj->quantity .'</td><td>'. print $obj->Price .'</td></tr>';
+        $table .= '<tr><td>'. $obj['name'] .'</td><td>'. print $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td></tr>';
       }
 
     $table .= "</table>";
