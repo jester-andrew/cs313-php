@@ -13,10 +13,13 @@ session_start();
     <?php 
     //var_dump($_SESSION['cart']); 
     $table = "<table><tr><th>Item Name</th><th>Qty.</th><th>Price</th></tr>";
-    $items = json_decode($_SESSION['cart'], true);
+    $items = $_SESSION['cart'];
     var_dump($items);
     foreach($items as $item){
-        $table .= '<tr><td>'. $item['name'] .'</td><td>'. $item['quantity'] .'</td><td>'. $item['Price'] .'</td></tr>';
+        $obj = json_decode($item, true);
+        
+        //var_dump($obj);
+        $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td></tr>';
       }
 
     $table .= "</table>";
