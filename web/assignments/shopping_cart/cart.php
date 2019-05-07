@@ -18,11 +18,8 @@ session_start();
     foreach($items as $item){
         $obj = json_decode($item, true);
         
-        echo $obj['name'];
-        echo $obj['quantity'];
-        echo $obj['Price'];
         //var_dump($obj);
-        //$table .= '<tr><td>'. $obj['name'] .'</td><td>'. print $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td></tr>';
+        $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td></tr>';
       }
 
     $table .= "</table>";
