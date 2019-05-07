@@ -16,7 +16,6 @@ session_start();
     $items = $_SESSION['cart'];
 
     foreach($items as $item){
-        echo "\n\n".$item['name'];
         $obj = json_decode($item);
         $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td></tr>';
       }
