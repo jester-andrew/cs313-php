@@ -18,7 +18,7 @@ session_start();
     foreach($items as $item){
         $obj = json_decode($item, true);
     
-        var_dump($obj);
+        //var_dump($obj);
         $table .= '<tr><td>'. $obj['name'] .'</td><td>'. print $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td></tr>';
       }
 
