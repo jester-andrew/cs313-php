@@ -19,6 +19,13 @@ var_dump($_GET);
     <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
     <p>Major: <?php echo $major; ?></p>
     <p>Comments: <?php echo $commnt; ?></p>
+    <p>I have been to: <?php 
+    $continents = $_GET['continents'];
+        foreach($continents as $continent){
+          echo "<p>". $continent . "</p>";
+        }
+   
+    ?></p>
     
 </body>
 </html>
