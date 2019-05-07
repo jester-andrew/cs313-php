@@ -10,7 +10,7 @@ function addToCart(type) {
         let quant = document.getElementById('val4').value;
         let data = { name: "Halogen Light Bulbs", Price: 5.00, quantity: quant }
 
-        console.log(data.Price);
+        console.log(data.Price * quant);
         data.Price = data.price * quant;
 
         insertIntoCart(JSON.stringify(data));
