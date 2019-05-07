@@ -19,7 +19,7 @@ session_start();
         $total = $total + $obj['Price'];
         $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td></tr>';
       }
-    $table .= "<tr><th>Total Price</th><td>".$total."</td></tr>";
+    $table .= "<tr><th>Total Price</th><td></td><td>".$total."</td></tr>";
     $table .= "</table>";
 
     echo $table;
