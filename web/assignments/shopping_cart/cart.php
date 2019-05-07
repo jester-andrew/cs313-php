@@ -16,8 +16,9 @@ session_start();
     $items = $_SESSION['cart'];
 
     foreach($items as $item){
-        $obj = json_decode($item);
-        //var_dump($obj->name);
+        $obj = json_decode($item, true);
+    
+        var_dump($obj);
         $table .= '<tr><td>'. print $obj->name .'</td><td>'. print $obj->quantity .'</td><td>'. print $obj->Price .'</td></tr>';
       }
 
