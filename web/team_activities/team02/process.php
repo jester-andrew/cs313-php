@@ -3,6 +3,8 @@ $name = $_GET['name'];
 $email = $_GET['email'];
 $major = $_GET['major'];
 $commnt = $_GET['comments'];
+
+var_dump($_GET);
 ?>
 <!DOCTYPE html>
 <html lang="en">
