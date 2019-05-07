@@ -1,10 +1,9 @@
 <?php
-$name = $_GET['name'];
-$email = $_GET['email'];
-$major = $_GET['major'];
-$commnt = $_GET['comments'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$major = $_POST['major'];
+$commnt = $_POST['comments'];
 
-var_dump($_GET);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +19,7 @@ var_dump($_GET);
     <p>Major: <?php echo $major; ?></p>
     <p>Comments: <?php echo $commnt; ?></p>
     <p>I have been to: <?php 
-    $continents = $_GET['continents'];
+    $continents = $_POST['continents'];
         foreach($continents as $continent){
           echo "<p>". $continent . "</p>";
         }
