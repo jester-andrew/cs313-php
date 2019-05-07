@@ -14,7 +14,7 @@ $commnt = $_POST['comments'];
 </head>
 <body>
     <h1>Welcome <?php echo $name; ?></h1>
-    <a href="mailto:<?php echo $email; ?>"></a>
+    <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
     <p>Major: <?php echo $major; ?></p>
     <p>Comments: <?php echo $commnt; ?></p>
     
