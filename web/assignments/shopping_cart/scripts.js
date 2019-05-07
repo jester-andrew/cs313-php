@@ -9,6 +9,8 @@ function addToCart(type) {
     } else if (type == "hal") {
         let quant = document.getElementById('val4').value;
         let data = { name: "Halogen Light Bulbs", Price: 5.00, quantity: quant }
+
+        console.log(data.Price);
         data.Price = data.price * quant;
 
         insertIntoCart(JSON.stringify(data));
