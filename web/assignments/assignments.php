@@ -16,7 +16,7 @@
     <main>
         <ul>
             <li><a href="./shopping_cart/browse.php">Week03</a></li>
-            <li><a href="/web/team_activities/team02/forms.php">Team03</a></li>
+            <li><a href="../team_activities/team02/forms.php">Team03</a></li>
         </ul>
     </main>
     <footer>
