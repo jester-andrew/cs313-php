@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="process.php" method="post">
+<form action="process.php" method="get">
 
     <label for="name">Name</label>
     <input type="text" name="name" id="name">
@@ -24,6 +24,13 @@
     <label for="comments">Comment</label>
     <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
 
+    <input type="checkbox" name="continents" id="con" value="North America">North America
+    <input type="checkbox" name="continents" id="con" value="South America">South America
+    <input type="checkbox" name="continents" id="con" value="Europe">Europe
+    <input type="checkbox" name="continents" id="con" value="Australia">Australia
+    <input type="checkbox" name="continents" id="con" value="Asia">Asia
+    <input type="checkbox" name="continents" id="con" value="Africa">Africa
+    <input type="checkbox" name="continents" id="con" value="Antarctica">Antarctica
 
     <input type="submit" value="Submit">
 </form>

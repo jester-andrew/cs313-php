@@ -1,8 +1,8 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$major = $_POST['major'];
-$commnt = $_POST['comments'];
+$name = $_GET['name'];
+$email = $_GET['email'];
+$major = $_GET['major'];
+$commnt = $_GET['comments'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
