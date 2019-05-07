@@ -1,5 +1,6 @@
 img {
-    width: 100px;
+    display: block;
+    width: 150px;
 }
 
 h3 {
