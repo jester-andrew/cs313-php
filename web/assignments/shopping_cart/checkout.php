@@ -22,13 +22,13 @@ session_start();
 </nav>
 </header>
     <h2>checkout</h2>
-<form action="confirmation.php">
-    <input type="text" name="name" placeholder="Name">
-    <input type="text" name="address" placeholder="Address">
-    <input type="text" name="apt" placeholder="Apt #">
-    <input type="text" name="city" placeholder="City">
-    <input type="text" name="state" placeholder="State">
-    <input type="text" name="zip" placeholder="Zip Code">
+<form action="confirmation.php" method="post">
+    <input type="text" name="name" placeholder="Name"><br>
+    <input type="text" name="address" placeholder="Address"><br>
+    <input type="text" name="apt" placeholder="Apt #"><br>
+    <input type="text" name="city" placeholder="City"><br>
+    <input type="text" name="state" placeholder="State"><br>
+    <input type="text" name="zip" placeholder="Zip Code"><br>
     <input type="submit" value="Finish Purchase">
 </form>
     

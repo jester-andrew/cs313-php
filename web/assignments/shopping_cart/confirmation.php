@@ -1,5 +1,12 @@
 <?php 
 session_start();
+$name = filter_input(INPUT_POST, 'name', filter, FILTER_SANITIZE_STRING);
+$address = filter_input(INPUT_POST, 'address', filter, FILTER_SANITIZE_STRING);
+$apt = filter_input(INPUT_POST, 'apt', filter, FILTER_SANITIZE_STRING);
+$city = filter_input(INPUT_POST, 'city', filter, FILTER_SANITIZE_STRING);
+$state = filter_input(INPUT_POST, 'state', filter, FILTER_SANITIZE_STRING);
+$zip = filter_input(INPUT_POST, 'zip', filter, FILTER_SANITIZE_STRING);
+
 
 ?>
 <!DOCTYPE html>
@@ -23,20 +30,27 @@ session_start();
 </header>
     <h2>Your purchase was successful!</h2>
     <h3>Ship TO:</h3>
+    
+    <?php 
+        echo $name . "\n";
+        echo $address . " ". $apt. "\n";
+        echo $city . ", ".$state."\n";
+        echo $zip;
+    ?>
 
     <h3>Items Purchased</h3>
     <?php  
-    $table = "<table><tr><th>Item Name</th><th>Qty.</th><th>Price</th><th></th></tr>";
+    $table = "<table><tr><th>Item Name</th><th>Qty.</th><th>Price</th></tr>";
     $items = $_SESSION['cart'];
     $total = 0;
     $i = 0;
     foreach($items as $item){
         $obj = json_decode($item, true);
         $total = $total + $obj['Price'];
-        $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>$'. $obj['Price'] .'</td><td><input type="button" value="Remove" id="'.$i.'" onclick="removeItem('.$i.')"></td></tr>';
+        $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>$'. $obj['Price'] .'</td></tr>';
         $i++;
       }
-    $table .= "<tr><th>Total Price</th><td></td><td>$".number_format($total, 2, '.', '')."</td><td><input type='Submit' value='Checkout'></td></tr>";
+    $table .= "<tr><th>Total Price</th><td></td><td>$".number_format($total, 2, '.', '')."</td></tr>";
     $table .= "</table>";
 
     echo $table;
