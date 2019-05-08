@@ -16,10 +16,12 @@ session_start();
     $table = "<table><tr><th>Item Name</th><th>Qty.</th><th>Price</th></tr>";
     $items = $_SESSION['cart'];
     $total = 0;
+    $i = 0;
     foreach($items as $item){
         $obj = json_decode($item, true);
         $total = $total + $obj['Price'];
-        $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td></tr>';
+        $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td><td><input type="button" value="Remove" id="'.$i.'"></td></tr>';
+        $i++;
       }
     $table .= "<tr><th>Total Price</th><td></td><td>".$total."</td></tr>";
     $table .= "</table>";
