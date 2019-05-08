@@ -60,3 +60,5 @@ $zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
 <script src="./scripts.js"></script>
 </body>
 </html>
+<?php 
+unset($_SESSION['cart']);
