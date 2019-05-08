@@ -34,6 +34,6 @@ session_start();
     echo $table;
     ?>
     
-
+<script src="./scripts.js"></script>
 </body>
 </html>
