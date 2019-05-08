@@ -92,3 +92,11 @@ body {
 img {
     align-self: center;
 }
+
+#inc {
+    width: 75px;
+}
+
+#hal {
+    width: 185px;
+}

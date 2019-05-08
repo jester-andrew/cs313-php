@@ -35,7 +35,7 @@
 </div>
 <div>
     <h3>Incandescent Bulbs</h3>
-    <img src="./img/inc.png" alt="Incandescent">
+    <img src="./img/inc.png" alt="Incandescent" id="inc">
     Quanity
     <input type="text" name="value" id="val2" value="1">
     <input type="button" value="Add to Cart" id="btn2" onclick="addToCart('inc');">
@@ -53,7 +53,7 @@
 </div>
 <div>
     <h3>Halogen Bulbs</h3>
-    <img src="./img/hal.png" alt="Incandescent">
+    <img src="./img/hal.png" alt="Incandescent" id="hal">
     Quanity
     <input type="text" name="value" id="val4" value="1">
     <input type="button" value="Add to Cart" id="btn4" onclick="addToCart('hal');">
