@@ -25,6 +25,7 @@ session_start();
 </ul>
 </nav>
 </header>
+<main>
     <h2>Shopping Cart</h2>
     <form action="checkout.php">
     <?php  
@@ -44,7 +45,7 @@ session_start();
     echo $table;
     ?>
     </form>
-    
+    </main>
 <script src="./scripts.js"></script>
 </body>
 </html>

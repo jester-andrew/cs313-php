@@ -21,6 +21,7 @@ session_start();
 </ul>
 </nav>
 </header>
+<main>
     <h2>checkout</h2>
 <form action="confirmation.php" method="post">
     <input type="text" name="name" placeholder="Name"><br>
@@ -31,7 +32,7 @@ session_start();
     <input type="text" name="zip" placeholder="Zip Code"><br>
     <input type="submit" value="Finish Purchase">
 </form>
-    
+</main>  
 <script src="./scripts.js"></script>
 </body>
 </html>
