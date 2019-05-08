@@ -66,7 +66,7 @@ function removeItem(index) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            alert("Success");
+            window.location.reload();
         }
     };
     xhttp.open("POST", "cart.php?index=" + index, true);
