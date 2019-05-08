@@ -22,8 +22,8 @@ session_start();
 </nav>
 </header>
 <main>
-    <h2>checkout</h2>
-<form action="confirmation.php" method="post">
+    <h2>Checkout</h2>
+<form action="confirmation.php" method="post" id="check_form">
     <input type="text" name="name" placeholder="Name"><br>
     <input type="text" name="address" placeholder="Address"><br>
     <input type="text" name="apt" placeholder="Apt #"><br>

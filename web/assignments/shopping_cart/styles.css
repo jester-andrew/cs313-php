@@ -108,3 +108,15 @@ img {
 #hal {
     width: 185px;
 }
+
+check_form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+check_form input {
+    width: 100%;
+    height: 1.2em;
+    font-size: 1.2em;
+}
