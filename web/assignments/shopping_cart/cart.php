@@ -2,7 +2,7 @@
 session_start();
 
     if(isset($_GET['index'])){
-        $_SESSION['cart'][$_GET['index']];
+        unset($_SESSION['cart'][$_GET['index']]);
     }
 ?>
 <!DOCTYPE html>
