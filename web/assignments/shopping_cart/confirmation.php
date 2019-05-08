@@ -1,11 +1,11 @@
 <?php 
 session_start();
-$name = filter_input(INPUT_POST, 'name', filter, FILTER_SANITIZE_STRING);
-$address = filter_input(INPUT_POST, 'address', filter, FILTER_SANITIZE_STRING);
-$apt = filter_input(INPUT_POST, 'apt', filter, FILTER_SANITIZE_STRING);
-$city = filter_input(INPUT_POST, 'city', filter, FILTER_SANITIZE_STRING);
-$state = filter_input(INPUT_POST, 'state', filter, FILTER_SANITIZE_STRING);
-$zip = filter_input(INPUT_POST, 'zip', filter, FILTER_SANITIZE_STRING);
+$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+$address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
+$apt = filter_input(INPUT_POST, 'apt', FILTER_SANITIZE_STRING);
+$city = filter_input(INPUT_POST, 'city', FILTER_SANITIZE_STRING);
+$state = filter_input(INPUT_POST, 'state', FILTER_SANITIZE_STRING);
+$zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
 
 echo "$name, $address, $apt, $city, $state, $zip";
 ?>
