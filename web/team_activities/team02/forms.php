@@ -21,7 +21,7 @@
     <input type="radio" name="major" value="CIT">CIT<br>
     <input type="radio" name="major" value="Software Engineering">Software Engineering<br>
 
-    <label for="comments">Comment</label>
+    <label for="comments">Comment</label><br>
     <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
 
     <input type="checkbox" name="continents[]" id="con" value="North America">North America
@@ -30,7 +30,7 @@
     <input type="checkbox" name="continents[]" id="con" value="Australia">Australia
     <input type="checkbox" name="continents[]" id="con" value="Asia">Asia
     <input type="checkbox" name="continents[]" id="con" value="Africa">Africa
-    <input type="checkbox" name="continents[]" id="con" value="Antarctica">Antarctica
+    <input type="checkbox" name="continents[]" id="con" value="Antarctica">Antarctica<br>
 
     <input type="submit" value="Submit">
 </form>
