@@ -24,6 +24,7 @@
 <h2>Featured Products</h2>
 
 <form>
+    <div class="flex">
     <h3>L.E.D Bulbs</h3>
     <img src="./img/led.png" alt="led">
     Quanity
@@ -37,7 +38,8 @@
     <input type="text" name="value" id="val2" value="1">
     <input type="button" value="Add to Cart" id="btn2" onclick="addToCart('inc');">
     <p id="incmessage" class="success" ></p>
-
+</div>
+<div class="flex">
     <h3>Fluorescent Bulbs</h3>
     <img src="./img/flo.png" alt="Fluorescent">
     Quanity
@@ -51,7 +53,8 @@
     <input type="text" name="value" id="val4" value="1">
     <input type="button" value="Add to Cart" id="btn4" onclick="addToCart('hal');">
     <p id="halmessage" class="success" ></p>
-
+</div>
+<div class="flex">
     <h3>Neon Bulbs</h3>
     <img src="./img/neon.png" alt="neon">
     Quanity
@@ -65,6 +68,7 @@
     <input type="text" name="value" id="val6" value="1">
     <input type="button" value="Add to Cart" id="btn6" onclick="addToCart('blk');">
     <p id="blkmessage" class="success" ></p>
+</div>
 </form>
 </main>
     <script src="./scripts.js"></script>

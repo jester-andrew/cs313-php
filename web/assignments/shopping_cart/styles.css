@@ -74,3 +74,17 @@ table th {
 .success {
     color: green;
 }
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main {
+    width: 85%;
+    background-color: white;
+}
+
+body {
+    background-color: #ddd;
+}
