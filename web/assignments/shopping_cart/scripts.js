@@ -1,3 +1,5 @@
+let message = "Added";
+
 function addToCart(type) {
     if (type == "inc") {
         let quant = document.getElementById('val2').value;
@@ -6,6 +8,7 @@ function addToCart(type) {
         data.Price = fullPrice.toFixed(2);
 
         insertIntoCart(JSON.stringify(data));
+        document.getElementById('incmessage').innerHTML = message;
 
     } else if (type == "hal") {
         let quant = document.getElementById('val4').value;
@@ -13,8 +16,8 @@ function addToCart(type) {
         let fullPrice = data.Price * quant;
         data.Price = fullPrice.toFixed(2);
 
-
         insertIntoCart(JSON.stringify(data));
+        document.getElementById('halmessage').innerHTML = message;
 
     } else if (type == "led") {
         let quant = document.getElementById('val1').value;
@@ -23,6 +26,7 @@ function addToCart(type) {
         data.Price = fullPrice.toFixed(2);
 
         insertIntoCart(JSON.stringify(data));
+        document.getElementById('ledmessage').innerHTML = message;
 
     } else if (type == "blk") {
         let quant = document.getElementById('val6').value;
@@ -31,6 +35,7 @@ function addToCart(type) {
         data.Price = fullPrice.toFixed(2);
 
         insertIntoCart(JSON.stringify(data));
+        document.getElementById('blkmessage').innerHTML = message;
 
     } else if (type == "neo") {
         let quant = document.getElementById('val5').value;
@@ -39,6 +44,7 @@ function addToCart(type) {
         data.Price = fullPrice.toFixed(2);
 
         insertIntoCart(JSON.stringify(data));
+        document.getElementById('neomessage').innerHTML = message;
 
     } else { // flo
         let quant = document.getElementById('val3').value;
@@ -47,6 +53,7 @@ function addToCart(type) {
         data.Price = fullPrice.toFixed(2);
 
         insertIntoCart(JSON.stringify(data));
+        document.getElementById('flomessage').innerHTML = message;
 
     }
 }
@@ -54,9 +61,7 @@ function addToCart(type) {
 function insertIntoCart(data) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            $message = "Successfully added";
-        }
+        if (this.readyState == 4 && this.status == 200) {}
     };
     xhttp.open("POST", "additem.php?data=" + data, true);
     xhttp.send();

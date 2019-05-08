@@ -26,10 +26,10 @@ session_start();
     foreach($items as $item){
         $obj = json_decode($item, true);
         $total = $total + $obj['Price'];
-        $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td><td><input type="button" value="Remove" id="'.$i.'" onclick="removeItem('.$i.')"></td></tr>';
+        $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>$'. $obj['Price'] .'</td><td><input type="button" value="Remove" id="'.$i.'" onclick="removeItem('.$i.')"></td></tr>';
         $i++;
       }
-    $table .= "<tr><th>Total Price</th><td></td><td>".$total."</td><td><input type='Submit' value='Checkout'></td></tr>";
+    $table .= "<tr><th>Total Price</th><td></td><td>$".number_format($total, 2, '.', '')."</td><td><input type='Submit' value='Checkout'></td></tr>";
     $table .= "</table>";
 
     echo $table;
