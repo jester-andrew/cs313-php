@@ -16,7 +16,16 @@ session_start();
     <title>Shopping cart</title>
 </head>
 <body>
-    <h1>Shopping Cart</h1>
+<header>
+<h1>Light Bulb City</h1>
+<nav>
+    <ul>
+    <li><a href="./browse.php">Browse</a></li>
+    <li><a href="./cart.php">Shopping Cart</a></li>
+</ul>
+</nav>
+</header>
+    <h2>Shopping Cart</h2>
     <form action="checkout.php">
     <?php  
     $table = "<table><tr><th>Item Name</th><th>Qty.</th><th>Price</th><th></th></tr>";
@@ -34,6 +43,7 @@ session_start();
 
     echo $table;
     ?>
+    </form>
     
 <script src="./scripts.js"></script>
 </body>
