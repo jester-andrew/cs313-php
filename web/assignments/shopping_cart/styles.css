@@ -88,3 +88,7 @@ main {
 body {
     background-color: #ddd;
 }
+
+img {
+    align-self: center;
+}
