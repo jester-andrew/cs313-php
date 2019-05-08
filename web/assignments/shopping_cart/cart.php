@@ -3,6 +3,7 @@ session_start();
 
     if(isset($_GET['index'])){
         unset($_SESSION['cart'][$_GET['index']]);
+        sort($_SESSION['cart']);
     }
 ?>
 <!DOCTYPE html>
