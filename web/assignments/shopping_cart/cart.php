@@ -24,7 +24,7 @@ session_start();
         $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td><td><input type="button" value="Remove" id="'.$i.'"></td></tr>';
         $i++;
       }
-    $table .= "<tr><th>Total Price</th><td></td><td>".$total."</td><td><input type="Submit" value="Checkout"></td></tr>";
+    $table .= "<tr><th>Total Price</th><td></td><td>".$total."</td><td><input type='Submit' value='Checkout'></td></tr>";
     $table .= "</table>";
 
     echo $table;
