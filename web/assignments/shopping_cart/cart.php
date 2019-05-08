@@ -12,6 +12,7 @@ session_start();
 </head>
 <body>
     <h1>Shopping Cart</h1>
+    <form action="checkout.php">
     <?php  
     $table = "<table><tr><th>Item Name</th><th>Qty.</th><th>Price</th><th></th></tr>";
     $items = $_SESSION['cart'];
@@ -23,7 +24,7 @@ session_start();
         $table .= '<tr><td>'. $obj['name'] .'</td><td>'. $obj['quantity'] .'</td><td>'. $obj['Price'] .'</td><td><input type="button" value="Remove" id="'.$i.'"></td></tr>';
         $i++;
       }
-    $table .= "<tr><th>Total Price</th><td></td><td>".$total."</td><td></td></tr>";
+    $table .= "<tr><th>Total Price</th><td></td><td>".$total."</td><td><input type="Submit" value="Checkout"></td></tr>";
     $table .= "</table>";
 
     echo $table;
