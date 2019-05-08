@@ -18,7 +18,7 @@ $zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
 </head>
 <body>
 <header>
-    <main>
+    
 <h1>Light Bulb City</h1>
 <nav>
     <ul>
@@ -27,6 +27,7 @@ $zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
 </ul>
 </nav>
 </header>
+<main>
     <h2>Your purchase was successful!</h2>
     <h3>Ship TO:</h3>
     
