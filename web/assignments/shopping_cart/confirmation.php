@@ -18,6 +18,7 @@ $zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
 </head>
 <body>
 <header>
+    <main>
 <h1>Light Bulb City</h1>
 <nav>
     <ul>
@@ -56,7 +57,7 @@ $zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
     echo $table;
     ?>
 
-    
+   </main> 
 <script src="./scripts.js"></script>
 </body>
 </html>
