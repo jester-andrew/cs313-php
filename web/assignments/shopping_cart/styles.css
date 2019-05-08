@@ -91,10 +91,11 @@ body {
 
 img {
     align-self: center;
+    margin-bottom: 1em;
 }
 
 #inc {
-    width: 75px;
+    width: 80px;
 }
 
 #hal {
