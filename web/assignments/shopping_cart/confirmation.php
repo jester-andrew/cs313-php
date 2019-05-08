@@ -7,7 +7,7 @@ $city = filter_input(INPUT_POST, 'city', filter, FILTER_SANITIZE_STRING);
 $state = filter_input(INPUT_POST, 'state', filter, FILTER_SANITIZE_STRING);
 $zip = filter_input(INPUT_POST, 'zip', filter, FILTER_SANITIZE_STRING);
 
-
+echo "$name, $address, $apt, $city, $state, $zip";
 ?>
 <!DOCTYPE html>
 <html lang="en">
