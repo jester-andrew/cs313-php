@@ -3,7 +3,7 @@ let message = "Added";
 function addToCart(type) {
     if (type == "inc") {
         let quant = document.getElementById('val2').value;
-        let data = { name: "Incandescent Light Bulbs", Price: 3.95, quantity: quant }
+        let data = { name: "Incandescent Light Bulbs", Price: 3.45, quantity: quant }
         let fullPrice = data.Price * quant;
         data.Price = fullPrice.toFixed(2);
 
@@ -21,7 +21,7 @@ function addToCart(type) {
 
     } else if (type == "led") {
         let quant = document.getElementById('val1').value;
-        let data = { name: "L.E.D. Light Bulbs", Price: 2.95, quantity: quant }
+        let data = { name: "L.E.D. Light Bulbs", Price: 1.95, quantity: quant }
         let fullPrice = data.Price * quant;
         data.Price = fullPrice.toFixed(2);
 
@@ -48,7 +48,7 @@ function addToCart(type) {
 
     } else { // flo
         let quant = document.getElementById('val3').value;
-        let data = { name: "Fluorescent Light Bulbs", Price: 3.95, quantity: quant }
+        let data = { name: "Fluorescent Light Bulbs", Price: 2.95, quantity: quant }
         let fullPrice = data.Price * quant;
         data.Price = fullPrice.toFixed(2);
 

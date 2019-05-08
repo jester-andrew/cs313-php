@@ -31,6 +31,7 @@
     Quanity
     <input type="text" name="value" id="val1" value="1">
     <input type="button" value="Add to Cart" id="btn1" onclick="addToCart('led');" >
+    <p>$1.95 each</p>
     <p id="ledmessage" class="success" ></p>
 </div>
 <div>
@@ -40,6 +41,7 @@
     <input type="text" name="value" id="val2" value="1">
     <input type="button" value="Add to Cart" id="btn2" onclick="addToCart('inc');">
     <p id="incmessage" class="success" ></p>
+    <p>$3.45 each</p>
 </div>
 </div>
 <div class="flex">
@@ -50,6 +52,7 @@
     <input type="text" name="value" id="val3" value="1">
     <input type="button" value="Add to Cart" id="btn3" onclick="addToCart('flo');">
     <p id="flomessage" class="success" ></p>
+    <p>$2.95 each</p>
 </div>
 <div>
     <h3>Halogen Bulbs</h3>
@@ -58,6 +61,7 @@
     <input type="text" name="value" id="val4" value="1">
     <input type="button" value="Add to Cart" id="btn4" onclick="addToCart('hal');">
     <p id="halmessage" class="success" ></p>
+    <p>$5.00 each</p>
 </div>
 </div>
 <div class="flex">
@@ -68,6 +72,7 @@
     <input type="text" name="value" id="val5" value="1">
     <input type="button" value="Add to Cart" id="btn5" onclick="addToCart('neo');">
     <p id="neomessage" class="success" ></p>
+    <p>$8.95 each</p>
 </div>
 <div>
     <h3>Black lights</h3>
@@ -76,6 +81,7 @@
     <input type="text" name="value" id="val6" value="1">
     <input type="button" value="Add to Cart" id="btn6" onclick="addToCart('blk');">
     <p id="blkmessage" class="success" ></p>
+    <p>$3.95 each</p>
 </div>
 </div>
 </form>
