@@ -22,7 +22,7 @@ $zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
 <h1>Light Bulb City</h1>
 <nav>
     <ul>
-    <li><a href="./browse.php">Browse</a></li>
+    <li><a href="./browse.php">Browse |</a></li>
     <li><a href="./cart.php">Shopping Cart</a></li>
 </ul>
 </nav>
