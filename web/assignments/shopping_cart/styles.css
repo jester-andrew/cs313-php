@@ -7,10 +7,18 @@ nav ul a {
     color: white;
 }
 
+nav a:hover {
+    opacity: .5;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     background-color: blue;
+}
+
+nav {
+    align-items: center;
 }
 
 body {
@@ -20,6 +28,10 @@ body {
 img {
     display: block;
     width: 150px;
+}
+
+h1 {
+    color: white;
 }
 
 h3 {
