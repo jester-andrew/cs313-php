@@ -6,8 +6,6 @@ $apt = filter_input(INPUT_POST, 'apt', FILTER_SANITIZE_STRING);
 $city = filter_input(INPUT_POST, 'city', FILTER_SANITIZE_STRING);
 $state = filter_input(INPUT_POST, 'state', FILTER_SANITIZE_STRING);
 $zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
-
-echo "$name, $address, $apt, $city, $state, $zip";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,11 +29,13 @@ echo "$name, $address, $apt, $city, $state, $zip";
     <h2>Your purchase was successful!</h2>
     <h3>Ship TO:</h3>
     
-    <?php 
-        echo $name . "\n";
-        echo $address . " ". $apt. "\n";
-        echo $city . ", ".$state."\n";
+    <?php
+        echo "<p>";
+        echo $name . "<br>";
+        echo $address . " ". $apt. "<br>";
+        echo $city . ", ".$state."<br>";
         echo $zip;
+        echo "</p>";
     ?>
 
     <h3>Items Purchased</h3>
