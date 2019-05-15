@@ -12,12 +12,11 @@ CREATE TABLE public."Users"
 
 CREATE TABLE public."MountainRanges"
 (
-    "ID" integer NOT NULL DEFAULT nextval('"MountainRanges_ID_seq"'::regclass),
-    "RangeName" text COLLATE pg_catalog."default" NOT NULL,
-    "History" text COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT "MountainRanges_pkey" PRIMARY KEY ("ID")
+    "ID" integer NOT NULL,
+    "RangeName" text NOT NULL,
+    "History" text NOT NULL,
+    PRIMARY KEY ("ID")
 );
-
 
 CREATE TABLE public."Mountains"
 (
