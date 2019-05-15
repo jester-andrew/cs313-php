@@ -1,3 +1,6 @@
+/*******************************************
+* Tables
+*******************************************/
 CREATE TABLE public."Users"
 (
     "ID" serial NOT NULL,
@@ -37,6 +40,9 @@ CREATE TABLE public."Comments"
     PRIMARY KEY ("ID")
 );
 
+/*******************************************
+* Adding Foreign Keys
+*******************************************/
 ALTER TABLE public."Mountains" 
 ADD CONSTRAINT range_fk FOREIGN KEY ("RangeID") REFERENCES "MountainRanges" ("ID");
 
