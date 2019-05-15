@@ -1,0 +1,67 @@
+/**********************************************
+* Create Tables
+**********************************************/
+CREATE TABLE Note_user (
+ userID serial PRIMARY KEY,
+ name varchar(32)
+);
+
+CREATE TABLE Speaker (
+ speakerID serial PRIMARY KEY,
+ name varchar(32)
+);
+
+CREATE TABLE Conference (
+ conferenceID serial PRIMARY KEY,
+ date date
+);
+
+CREATE TABLE Note (
+ noteID serial PRIMARY KEY,
+ userID int REFERENCES Note_user(userID) ,
+ speakerID int REFERENCES Speaker(speakerID),
+ conferenceID int REFERENCES Conference(conferenceID),
+ content text
+);
+
+/**********************************************
+* Insert data
+**********************************************/
+INSERT INTO Note_user
+(name) VALUES ('Elias');
+
+INSERT INTO Note_user
+(name) VALUES ('Tony');
+
+INSERT INTO Note_user
+(name) VALUES ('Angelo');
+
+INSERT INTO Note_user
+(name) VALUES ('Andrew');
+
+INSERT INTO Note_user
+(name) VALUES ('Alice');
+
+INSERT INTO Note_user
+(name) VALUES ('Nathan');
+
+
+INSERT INTO Speaker
+(name) VALUES ('ELDER HOLLAND'), ('JOSEPH SMITH JR.'), ('ELDER JESTER');
+
+
+INSERT INTO Conference
+(date, session) VALUES (NOW(), 'saturdayAM'), (NOW(), 'saturdayPM');
+
+
+INSERT INTO Note
+VALUES (1, 1, 1, 1, 'The greatest session of all times');
+
+
+/**********************************************
+* Alter Table
+**********************************************/
+CREATE TYPE session AS ENUM ('saturdayAM', 'saturdayPM', 'sundayAM', 'sundayPM', 'Priesthood', 'Womens');
+
+ALTER TABLE Conference
+ADD COLUMN session session;
