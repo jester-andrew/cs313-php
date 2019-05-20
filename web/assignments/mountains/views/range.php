@@ -8,5 +8,10 @@
 </head>
 <body>
     <h1>Range Page</h1>
+    <?php
+    if(isset($peakList)){
+        echo $peakList;
+    }
+    ?>
 </body>
 </html>

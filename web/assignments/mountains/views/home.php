@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <?php
+            if(isset($nav)){
+                echo $nav;
+            }
+            ?>
+        </nav>
+    </header>
     <h1>home page</h1>
 </body>
 </html>
