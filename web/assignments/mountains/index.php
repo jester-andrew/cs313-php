@@ -15,7 +15,7 @@ switch ($action){
 
     default:
         $ranges = getRanges();
-        echo $ranges;
+        var_dump( $ranges );
         include './view/home.php';
         exit;
     break;
