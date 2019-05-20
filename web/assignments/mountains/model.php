@@ -49,8 +49,7 @@ function getMountainById($id){
     $stmt->execute();
     $mountain = $stmt->fetch();
     $stmt->closeCursor();
-
-    return $mountains;
+    return $mountain;
 }
 
 //comments
