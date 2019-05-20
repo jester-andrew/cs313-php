@@ -19,3 +19,7 @@ function createMountainList($mountains){
 
     return $peakList;
 }
+
+function buildMountainPage($mountain){
+    echo "will be implemented soon!";
+}

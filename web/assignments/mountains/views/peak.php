@@ -16,11 +16,8 @@
             ?>
         </nav>
     </header>
-    <h1>Range Page</h1>
-    <?php
-    if(isset($peakList)){
-        echo $peakList;
-    }
-    ?>
+    <h1>
+        Mountain page
+    </h1>
 </body>
 </html>

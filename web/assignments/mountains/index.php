@@ -10,11 +10,19 @@ if ($action == NULL){
  $action = filter_input(INPUT_GET, 'action');
 }
 
+if(!isset($_SESSION['ranges'])){
+    $ranges = getRanges();
+    $_SESSION['ranges'] = $ranges;
+}
+
+$nav = createNavigation($_SESSION['ranges']);
+
 switch ($action){
     case "peak":
     $peakId = filter_input(INPUT_GET, 'id');
     $peak = getMountainById($peakId);
     var_dump($peak);
+    include './views/peak.php';
     break;
     case "range":
     $rangeID = filter_input(INPUT_GET, 'id');
@@ -26,15 +34,6 @@ switch ($action){
     break;
 
     default:
-        if(!isset($_SESSION['ranges'])){
-            $ranges = getRanges();
-            $_SESSION['ranges'] = $ranges;
-        }
-
-        $nav = createNavigation($_SESSION['ranges']);
-
-        //echo $nav;
-
         include './views/home.php';
         exit;
     break;
