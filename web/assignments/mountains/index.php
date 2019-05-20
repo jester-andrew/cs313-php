@@ -11,7 +11,10 @@ if ($action == NULL){
 }
 
 switch ($action){
-    case "home":
+    case "range":
+    $rangeID = filter_input(INPUT_GET, 'id');
+    $mountains = getMountainsByRangeID($rangeID);
+    var_dump($mountains);
     break;
 
     default:
