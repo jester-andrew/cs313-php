@@ -3,6 +3,7 @@ session_start();
 
 require_once './databaseConnector.php';
 require_once './model.php';
+require_once './functions.php';
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL){
@@ -14,9 +15,16 @@ switch ($action){
     break;
 
     default:
-        $ranges = getRanges();
-        var_dump( $ranges );
-        include './view/home.php';
+        if(!isset($_SESSION['ranges'])){
+            $ranges = getRanges();
+            $_SESSION['ranges'] = $ranges;
+        }
+
+        $nav = createNavigation($_SESSION['ranges']);
+
+        echo $nav;
+
+        include './views/home.php';
         exit;
     break;
 }
