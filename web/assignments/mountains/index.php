@@ -11,11 +11,18 @@ if ($action == NULL){
 }
 
 switch ($action){
+    case "peak":
+    $peakId = filter_input(INPUT_GET, 'id');
+    $peak = getMountainById($peakId);
+    var_dump($peak);
+    break;
     case "range":
     $rangeID = filter_input(INPUT_GET, 'id');
     $mountains = getMountainsByRangeID($rangeID);
     $peakList = createMountainList($mountains);
-    echo $peakList;
+    //echo $peakList;
+    include './views/range.php';
+    exit;
     break;
 
     default:
@@ -26,7 +33,7 @@ switch ($action){
 
         $nav = createNavigation($_SESSION['ranges']);
 
-        echo $nav;
+        //echo $nav;
 
         include './views/home.php';
         exit;
