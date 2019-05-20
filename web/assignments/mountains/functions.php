@@ -9,3 +9,13 @@ function createNavigation($ranges){
 
     return $nav;
 }
+
+function createMountainList($mountains){
+    $peakList = "<ul>";
+    foreach($mountains as $mountain){
+        $peakList .= '<li><a href=index.php/?action=peak&id='.$mountain['ID'].'>'.$mountain['PeakName'].'</a></li>';
+    }
+    $peakList .= "</ul>";
+
+    return $peakList;
+}

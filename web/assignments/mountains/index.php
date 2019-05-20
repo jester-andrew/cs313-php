@@ -14,7 +14,8 @@ switch ($action){
     case "range":
     $rangeID = filter_input(INPUT_GET, 'id');
     $mountains = getMountainsByRangeID($rangeID);
-    var_dump($mountains);
+    $peakList = createMountainList($mountains);
+    echo $peakList;
     break;
 
     default:
