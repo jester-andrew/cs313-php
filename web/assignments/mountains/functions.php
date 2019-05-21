@@ -23,10 +23,9 @@ function createMountainList($mountains){
 function buildMountainPage($mountain){
     $page = "<ul>";
     $page .= "<li><img src='' alt='$mountain[PeakName]' ></li>";
-    $page .= "<li><span class='bold'>Elevation:</span><span>$mountain[ELevation]</span></li>";
+    $page .= "<li><span class='bold'>Elevation:</span><span>$mountain[Elevation]</span></li>";
     $page .= "<li><span class='bold'>Difficulty:</span><span>$mountain[Dificulty]</span></li>";
-    $page .= "<li><p>$mountain[Dificulty]</p></li>";
-    $page .= "<li><a href='$mountain[Link]'>More Info at 14ers.com</a></li>";
+    $page .= "<li><p>$mountain[Info]</p></li>";
     $page .= "<li><a href='$mountain[Link]'>More Info at 14ers.com</a></li>";
     $page .= "</ul>";
 

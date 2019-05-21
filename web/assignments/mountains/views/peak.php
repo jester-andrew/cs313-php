@@ -17,11 +17,13 @@
         </nav>
     </header>
     <h1>
+    <?php 
         if(isset($peak)){
             echo $peak['PeakName'];
         }
+        ?>
     </h1>
-    <?php 
+    <?php
         if(isset($page)){
             echo $page;
         }
