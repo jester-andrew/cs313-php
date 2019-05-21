@@ -20,7 +20,7 @@
     <?php
     if(isset($peakList)){
         echo $peakList;
-        var_dump($_SESSION['ranges']);
+        var_dump($_SESSION['ranges'][$id - 1]);
     }
     ?>
 </body>
