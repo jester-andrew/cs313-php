@@ -9,6 +9,7 @@
 </head>
 <body>
 <header>
+<h1>Colorado's 14ers</h1>
         <nav>
             <?php
             if(isset($nav)){

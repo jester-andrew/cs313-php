@@ -11,3 +11,8 @@ nav li {
 nav a {
     text-decoration: none;
 }
+
+header {
+    background-color: blue;
+    color: white;
+}
