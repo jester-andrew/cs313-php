@@ -13,7 +13,7 @@ function createNavigation($ranges){
 function createMountainList($mountains){
     $peakList = "<ul>";
     foreach($mountains as $mountain){
-        $peakList .= '<li><a href=index.php/?action=peak&id='.$mountain['ID'].'>'.$mountain['PeakName'].'</a></li>';
+        $peakList .= '<li><a href="?action=peak&id='.$mountain['ID'].'">'.$mountain['PeakName'].'</a></li>';
     }
     $peakList .= "</ul>";
 
