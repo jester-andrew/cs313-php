@@ -1,7 +1,13 @@
 nav ul {
     display: flex;
+    padding-left: 0;
 }
 
 nav li {
     margin-right: 1em;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
 }
