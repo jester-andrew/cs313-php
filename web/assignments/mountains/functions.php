@@ -21,5 +21,14 @@ function createMountainList($mountains){
 }
 
 function buildMountainPage($mountain){
-    echo "will be implemented soon!";
+    $page = "<ul>";
+    $page .= "<li><img src='' alt='$mountain[PeakName]' ></li>";
+    $page .= "<li><span class='bold'>Elevation:</span><span>$mountain[ELevation]</span></li>";
+    $page .= "<li><span class='bold'>Difficulty:</span><span>$mountain[Dificulty]</span></li>";
+    $page .= "<li><p>$mountain[Dificulty]</p></li>";
+    $page .= "<li><a href='$mountain[Link]'>More Info at 14ers.com</a></li>";
+    $page .= "<li><a href='$mountain[Link]'>More Info at 14ers.com</a></li>";
+    $page .= "</ul>";
+
+    return $page;
 }

@@ -21,7 +21,7 @@ switch ($action){
     case "peak":
     $peakId = filter_input(INPUT_GET, 'id');
     $peak = getMountainById($peakId);
-    var_dump($peak);
+    $page = buildMountainPage($peak);
     include './views/peak.php';
     break;
     case "range":

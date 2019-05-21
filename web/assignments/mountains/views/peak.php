@@ -17,7 +17,14 @@
         </nav>
     </header>
     <h1>
-        Mountain page
+        if(isset($peak)){
+            echo $peak['PeakName'];
+        }
     </h1>
+    <?php 
+        if(isset($page)){
+            echo $page;
+        }
+    ?>
 </body>
 </html>
