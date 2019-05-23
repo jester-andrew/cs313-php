@@ -27,7 +27,7 @@ function buildMountainPage($mountain){
     $page .= "<li id='small'>(Image from 14ers.com)</li>";
     $page .= "<li><span class='bold'>Elevation:</span> <span>$mountain[Elevation] Feet</span></li>";
     $page .= "<li><span class='bold'>Difficulty:</span> <span>Class $mountain[Dificulty]</span></li>";
-    $page .= "<li><p>$mountain[Info]</p></li>";
+    $page .= "<li><p>$mountain[Info] (Info from Wikipedia)</p></li>";
     $page .= "<li><a href='$mountain[Link]'>More Info at 14ers.com</a></li>";
     $page .= "</ul>";
 

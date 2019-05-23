@@ -23,7 +23,7 @@
     <main id="home">
     <img src="/assignments/mountains/img/mt.-sneffles.jpg" alt="Sneffles" id="homeimg">
     <p id="small">(Image from 14ers.com)</p>
-    <p>Welcome to colorado's 14ers. We strive to give you simple facts about the 14ers
+    <p>Welcome to Colorado's 14ers. We strive to give you simple facts about the 14ers
      in Colorado and point you where to go if you want to learn more or go for a hike! Enjoy
     this picture of Mt. Sneffles.</p>
     </main>
