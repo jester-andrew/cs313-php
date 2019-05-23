@@ -68,3 +68,9 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+
+#history {
+    margin-top: 2em;
+    width: 80%;
+    margin-bottom: 2em;
+}
