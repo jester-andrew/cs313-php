@@ -17,6 +17,7 @@
                 echo $nav;
             }
             ?>
+            <a href="/assignments/mountains/index.php?action=sign-in">Sign-in</a>
         </nav>
     </header>
     <main>
