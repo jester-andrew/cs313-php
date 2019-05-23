@@ -57,8 +57,12 @@ main {
 }
 
 #homeimg {
-    width: 80%;
+    width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#home p {
+    width: 75%;
 }
