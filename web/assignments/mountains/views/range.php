@@ -24,8 +24,9 @@
     <h1><?php echo $_SESSION['ranges'][$rangeID - 1]['RangeName']  ?></h1>
     <?php
     if(isset($peakList)){
-        echo $peakList;
+        
         echo '<p>'.$_SESSION['ranges'][$rangeID - 1]['History'].'</p>';
+        echo $peakList;
     }
     ?>
     </main>
