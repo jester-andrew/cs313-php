@@ -108,3 +108,7 @@
     #peak li {
         list-style: none;
     }
+    
+    .bold {
+        font-weight: bold;
+    }
