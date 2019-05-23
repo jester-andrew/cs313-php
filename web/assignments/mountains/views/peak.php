@@ -26,7 +26,7 @@
             <a href="/assignments/mountains/index.php?action=sign-in">Sign-in</a>
         </nav>
     </header>
-    <main>
+    <main id="peak">
     <h1>
     <?php 
         if(isset($peak)){

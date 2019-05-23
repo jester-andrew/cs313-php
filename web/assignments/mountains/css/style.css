@@ -100,3 +100,11 @@
     #range a:hover {
         text-decoration: underline;
     }
+    
+    #peakimg {
+        width: 45%;
+    }
+    
+    #peak li {
+        list-style: none;
+    }
