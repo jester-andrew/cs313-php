@@ -91,3 +91,12 @@
         margin-right: auto;
         padding-left: 0;
     }
+    
+    #range a {
+        text-decoration: none;
+        color: rgb(8, 28, 89);
+    }
+    
+    #range a:hover {
+        text-decoration: underline;
+    }
