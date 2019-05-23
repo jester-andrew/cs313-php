@@ -16,12 +16,18 @@ nav a {
     text-decoration: none;
 }
 
-header {
+header,
+footer {
     background-color: rgb(8, 28, 89);
     color: white;
+    padding: 1em;
 }
 
 header a {
     color: white;
     /* rgb(223,22,41) red rgb(255,179,16)yellow */
+}
+
+#wrapper {
+    width: 75%;
 }

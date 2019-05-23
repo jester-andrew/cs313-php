@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+<div id="wrapper">
 <header>
 <h1>Colorado's 14ers</h1>
         <nav>
@@ -18,6 +19,7 @@
             ?>
         </nav>
     </header>
+    <main>
     <h1><?php echo $_SESSION['ranges'][$rangeID - 1]['RangeName']  ?></h1>
     <?php
     if(isset($peakList)){
@@ -25,5 +27,10 @@
         echo '<p>'.$_SESSION['ranges'][$rangeID - 1]['History'].'</p>';
     }
     ?>
+    </main>
+    <footer>
+        <p>Last Ppdated 5/22/2019</p>
+    </footer>
+    </div>
 </body>
 </html>
