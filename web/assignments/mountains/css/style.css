@@ -17,6 +17,10 @@ nav a {
     align-self: center;
 }
 
+nav a:hover {
+    opacity: .5;
+}
+
 nav {
     background-color: rgb(223, 22, 41);
     padding: 1em;

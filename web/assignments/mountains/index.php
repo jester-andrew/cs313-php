@@ -18,12 +18,18 @@ if(!isset($_SESSION['ranges'])){
 $nav = createNavigation($_SESSION['ranges']);
 
 switch ($action){
+    case "sign-in":
+    include './views/sign-in.php';
+    exit;
+    break;
+
     case "peak":
     $peakId = filter_input(INPUT_GET, 'id');
     $peak = getMountainById($peakId);
     $page = buildMountainPage($peak);
     include './views/peak.php';
     break;
+    
     case "range":
     $rangeID = filter_input(INPUT_GET, 'id');
     $mountains = getMountainsByRangeID($rangeID);
