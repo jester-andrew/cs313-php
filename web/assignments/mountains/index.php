@@ -23,18 +23,22 @@ switch ($action){
     exit;
     break;
 
+    case "sign-up":
+    include './views/sign-up.php';
+    exit;
+    break;
+
     case "peak":
     $peakId = filter_input(INPUT_GET, 'id');
     $peak = getMountainById($peakId);
     $page = buildMountainPage($peak);
     include './views/peak.php';
     break;
-    
+
     case "range":
     $rangeID = filter_input(INPUT_GET, 'id');
     $mountains = getMountainsByRangeID($rangeID);
     $peakList = createMountainList($mountains);
-    //echo $peakList;
     include './views/range.php';
     exit;
     break;

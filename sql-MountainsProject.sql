@@ -53,6 +53,9 @@ ADD CONSTRAINT peak_fk FOREIGN KEY ("PeakID") REFERENCES "Mountains" ("ID");
 
 ALTER TABLE public."Users" ADD CONSTRAINT unique_un UNIQUE ("UserName");
 
+/*******************************************
+* Inserting mountain data
+*******************************************/
 insert into public."Mountains" ("RangeID", "PeakName", "Elevation", "Dificulty", "Info", "Link")
 values (3, 'Mount Elbert', '14440', 2, 'Mount Elbert is the highest summit of the Rocky Mountains of North America and the highest point in the U.S. state of Colorado, The mountain was named in honor of a Colorado statesman, Samuel Hitt Elbert, who was active in the formative period of the state and Governor of the Territory of Colorado from 1873 to 1874.', 'https://www.14ers.com/photos/peakmain.php?peak=Mt.+Elbert'),
 (3, 'Mount Massive', '14428', 2, 'Mount Massive is the second-highest summit of the Rocky Mountains of North America and the U.S. state of Colorado.', 'https://www.14ers.com/photos/peakmain.php?peak=Mt.+Massive'),
@@ -66,4 +69,10 @@ values (3, 'Mount Elbert', '14440', 2, 'Mount Elbert is the highest summit of th
 (2, 'Grays Peak', '14278', 3, 'Grays Peak is the tenth highest summit of the Rocky Mountains of North America and the U.S. state of Colorado.', 'https://www.14ers.com/routelist.php?peak=Grays+Peak'),
 (3, 'Mount Antero', '14276', 2, 'Mount Antero is the eleventh highest summit of the Rocky Mountains of North America and the U.S. state of Colorado.', 'https://www.14ers.com/routelist.php?peak=Mt.+Antero'),
 (2, 'Torreys Peak', '14275', 3, 'Torreys Peak is the twelfth highest summit of the Rocky Mountains of North America and the U.S. state of Colorado.', 'https://www.14ers.com/routelist.php?peak=Torreys+Peak'),
-(5, 'Quandary Peak', '14271', 3, 'Quandary Peak is the thirteenth highest summit of the Rocky Mountains of North America and the U.S. state of Colorado.', 'https://www.14ers.com/routelist.php?peak=Quandary+Peak'),
+(5, 'Quandary Peak', '14271', 3, 'Quandary Peak is the thirteenth highest summit of the Rocky Mountains of North America and the U.S. state of Colorado.', 'https://www.14ers.com/routelist.php?peak=Quandary+Peak'
+
+/*******************************************
+* Altering tables
+*******************************************/
+alter table public."Users" 
+add ImgPath text 
