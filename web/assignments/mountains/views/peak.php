@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/assignments/mountains/css/style.css">
-    <title>Document</title>
+    <title>
+    <?php 
+        if(isset($peak)){
+            echo $peak['PeakName'] . "| Colorado's 14ers";
+        }
+        ?>
+    </title>
 </head>
 <body>
 <div id="wrapper">
