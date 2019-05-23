@@ -16,6 +16,10 @@ nav a {
     text-decoration: none;
 }
 
+nav {
+    background-color: rgb(223, 22, 41);
+}
+
 header,
 footer {
     background-color: rgb(8, 28, 89);
@@ -30,4 +34,6 @@ header a {
 
 #wrapper {
     width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
