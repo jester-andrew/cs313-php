@@ -29,6 +29,10 @@ footer {
     padding-left: 1em;
 }
 
+footer {
+    padding-bottom: 1em;
+}
+
 header a {
     color: white;
     /* rgb(223,22,41) red rgb(255,179,16)yellow */
@@ -38,4 +42,5 @@ header a {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid rgb(255, 179, 16);
 }
