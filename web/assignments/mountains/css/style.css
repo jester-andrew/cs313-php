@@ -112,3 +112,7 @@
     .bold {
         font-weight: bold;
     }
+    
+    .small {
+        font-size: .5em;
+    }

@@ -18,6 +18,7 @@
             }
             ?>
             <a href="/assignments/mountains/index.php?action=sign-in">Sign-in</a>
+            <p>(Image from 14ers.com)</p>
         </nav>
     </header>
     <main id="home">
@@ -27,7 +28,7 @@
     this picture of Mt. Sneffles.</p>
     </main>
     <footer>
-        <p>Last Ppdated 5/22/2019</p>
+        <p>Last Ppdated 5/23/2019</p>
     </footer>
     <div id="wrapper">
 </body>

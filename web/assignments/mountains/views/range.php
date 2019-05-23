@@ -31,13 +31,13 @@
     <?php
     if(isset($peakList)){
         
-        echo '<p id="history">'.$_SESSION['ranges'][$rangeID - 1]['History'].'</p>';
+        echo '<p id="history">'.$_SESSION['ranges'][$rangeID - 1]['History'].'(Info from WikiPedia)</p>';
         echo $peakList;
     }
     ?>
     </main>
     <footer>
-        <p>Last Ppdated 5/22/2019</p>
+        <p>Last Ppdated 5/23/2019</p>
     </footer>
     </div>
 </body>
