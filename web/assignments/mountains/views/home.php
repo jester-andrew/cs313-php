@@ -23,7 +23,8 @@
     <main id="home">
     <img src="/assignments/mountains/img/mt.-sneffles.jpg" alt="Sneffles" id="homeimg">
     <p>Welcome to colorado's 14ers. We strive to give you simple facts about the 14ers
-     in Colorado and point you where to go if you want to learn more or go for a hike!</p>
+     in Colorado and point you where to go if you want to learn more or go for a hike! Enjoy
+    this picture of Mt. Sneffles.</p>
     </main>
     <footer>
         <p>Last Ppdated 5/22/2019</p>
