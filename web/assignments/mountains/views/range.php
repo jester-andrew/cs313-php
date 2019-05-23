@@ -20,7 +20,7 @@
             <a href="/assignments/mountains/index.php?action=sign-in">Sign-in</a>
         </nav>
     </header>
-    <main>
+    <main id="range">
     <h1><?php echo $_SESSION['ranges'][$rangeID - 1]['RangeName']  ?></h1>
     <?php
     if(isset($peakList)){
