@@ -55,6 +55,7 @@ header a {
 main {
     border: 5px solid rgb(255, 179, 16);
     padding: 1em;
+    background-color: white;
 }
 
 #homeimg {
