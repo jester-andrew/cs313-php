@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    background-image: url('/assignments/mountains/img/background.png');
 }
 
 nav ul {
@@ -54,7 +55,6 @@ header a {
 main {
     border: 5px solid rgb(255, 179, 16);
     padding: 1em;
-    background-image: url('/assignments/mountains/img/background.png');
 }
 
 #homeimg {
