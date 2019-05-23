@@ -21,7 +21,7 @@
         </nav>
     </header>
     <main>
-    <img src="/assignments/mountains/img/mt.-sneffles.jpg" alt="Sneffles">
+    <img src="/assignments/mountains/img/mt.-sneffles.jpg" alt="Sneffles" id="homeimg">
     <p>Welcome to colorado's 14ers. We strive to give you simple facts about the 14ers
      in Colorado and point you where to go if you want to learn more or go for a hike!</p>
     </main>
