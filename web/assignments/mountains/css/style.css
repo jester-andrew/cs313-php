@@ -18,14 +18,14 @@ nav a {
 
 nav {
     background-color: rgb(223, 22, 41);
-    padding: 2em;
+    padding: 1em;
 }
 
 header,
 footer {
     background-color: rgb(8, 28, 89);
     color: white;
-    padding: 1em;
+    padding-top: 1em;
 }
 
 header a {
