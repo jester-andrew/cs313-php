@@ -77,6 +77,14 @@ function addUser($user, $pw){
     return $rowsChanged;
 }
 
-function retreiveUser($user){
-
+function getUser($user){
+    $db = dbConnect();
+    $sql = 'SELECT * FROM "Users" WHERE "UserName" = :user;';
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':user', $user, PDO::PARAM_STR);
+    $stmt->execute();
+    $rUser = $stmt->fetch();
+    $stmt->closeCursor();
+    
+    return $rUser;
 }
