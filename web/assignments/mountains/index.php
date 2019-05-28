@@ -40,11 +40,16 @@ switch ($action){
     }
 
     $hashdpw = password_hash($password, PASSWORD_DEFAULT);
+    try{
+        $success = addUser($user, $hashdpw);
+    }catch($ex){
+        $message = "That Username has been taken please select another.";
+        include './views/sign-up.php';
+        exit;
+    }
 
-    $success = addUser($user, $hashdpw);
-
-    if($sucess){
-        $message = "Your accound has been set up!";
+    if($success){
+        $message = "Your account has been set up!";
         include './views/sign-in.php';
         exit;
     }else{
