@@ -26,7 +26,7 @@
     <input type="text" name="username" id="username" placeholder="Enter email"><br>
     <input type="password" name="password" id="password" placeholder="Enter password"><br>
     <input type="hidden" name="action" value="sign-in-process">
-    <input type="button" value="Sign in"><br>
+    <input type="submit" value="Sign in"><br>
     </form>
     <a href="/assignments/mountains/index.php?action=sign-up">Sign-up</a>
     </main>
