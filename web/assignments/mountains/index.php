@@ -35,11 +35,11 @@ switch ($action){
     if($same){
         $_SESSION['loggedin'] = true;
         $_SESSION['user'] = $user;
-        var_dump($_SESSION);
         include './views/site-update.php';
         exit;
     }
     
+    $message = "Wrong username or Password.";
     include './views/sign-in.php';
     exit;
     break;
