@@ -18,7 +18,19 @@ if(!isset($_SESSION['ranges'])){
 $nav = createNavigation($_SESSION['ranges']);
 
 switch ($action){
+    case "sign-in-process":
+    echo "sign-up-process";
+    include './views/sign-in.php';
+    exit;
+    break;
+
     case "sign-in":
+    include './views/sign-in.php';
+    exit;
+    break;
+
+    case "sign-up-process":
+    echo "sign-up-process";
     include './views/sign-in.php';
     exit;
     break;
