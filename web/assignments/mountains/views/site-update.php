@@ -28,8 +28,8 @@ if($_SESSION['loggedin'] != true){
     <main id="range">
     <h2>Welcome <?php echo $_SESSION['user']['UserName'] ?></h2>
         <?php 
-            if(isset($message)){
-                echo $message;
+            if($_SESSION['user']['UserLevel'] < 2){
+                echo "Sorry you don't have permissions for this page.";
             }
         ?>
     </form>
