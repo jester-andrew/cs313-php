@@ -28,7 +28,7 @@
     </header>
     <main id="range">
         sign-up
-        <form action="/index.php?action=sign-up-process" method="post">
+        <form action="/assignments/mountains/?action=sign-up-process" method="post">
         <input type="text" name="username" id="username" placeholder="Enter email"><br>
         <input type="text" name="password" id="password" placeholder="Enter password"><br>
         <input type="button" value="Sign up"><br>

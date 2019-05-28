@@ -25,7 +25,7 @@ switch ($action){
     break;
 
     case "sign-in":
-    include './views/sign-in.php';
+    include './views/site-update.php';
     exit;
     break;
 
