@@ -22,9 +22,10 @@
     </header>
     <main>
     Sign-in
-    <form action="/index.php?action=sign-in-process" method="post">
+    <form action="/assignments/mountains/" method="post">
     <input type="text" name="username" id="username" placeholder="Enter email"><br>
-    <input type="text" name="password" id="password" placeholder="Enter password"><br>
+    <input type="password" name="password" id="password" placeholder="Enter password"><br>
+    <input type="hidden" name="action" value="sign-in-process">
     <input type="button" value="Sign in"><br>
     </form>
     <a href="/assignments/mountains/index.php?action=sign-up">Sign-up</a>
