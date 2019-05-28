@@ -30,9 +30,28 @@ switch ($action){
     break;
 
     case "sign-up-process":
-    echo "sign-up-process";
-    include './views/sign-in.php';
-    exit;
+    $user = filter_input(INPUT_POST, 'username');
+    $password = filter_input(INPUT_POST, 'password');
+
+    if(empty($user) || empty($password)){
+        $message = "Please make sure to fill out all fields.";
+        include './views/sign-up.php';
+        exit;
+    }
+
+    $hashdpw = password_hash($password, PASSWORD_DEFAULT);
+
+    $success = addUser($user, $hashdpw);
+
+    if($sucess){
+        $message = "Your accound has been set up!";
+        include './views/sign-in.php';
+        exit;
+    }else{
+        $message = "Something went wrong setting up your account. Please try again.";
+        include './views/sign-up.php';
+        exit;
+    }
     break;
 
     case "sign-up":
