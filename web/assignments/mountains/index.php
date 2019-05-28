@@ -42,7 +42,7 @@ switch ($action){
     $hashdpw = password_hash($password, PASSWORD_DEFAULT);
     try{
         $success = addUser($user, $hashdpw);
-    }catch($ex){
+    }catch(Exception $ex){
         $message = "That Username has been taken please select another.";
         include './views/sign-up.php';
         exit;
