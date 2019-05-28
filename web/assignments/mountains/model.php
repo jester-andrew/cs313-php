@@ -83,7 +83,7 @@ function getUser($user){
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':user', $user, PDO::PARAM_STR);
     $stmt->execute();
-    $rUser = $stmt->fetch();
+    $rUser = $stmt->fetch(PDO::FETCH_ASSOC);
     $stmt->closeCursor();
     
     return $rUser;

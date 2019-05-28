@@ -30,11 +30,11 @@ switch ($action){
 
     $user = getUser($user);
     $same = password_verify($password, $user['Password']);
+    unset($user['Password']);
 
     if($same){
         $_SESSION['loggedin'] = true;
         $_SESSION['user'] = $user;
-        $_SESSION['Password'] = '';
         var_dump($_SESSION);
         include './views/site-update.php';
         exit;
