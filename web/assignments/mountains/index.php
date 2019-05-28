@@ -18,6 +18,12 @@ if(!isset($_SESSION['ranges'])){
 $nav = createNavigation($_SESSION['ranges']);
 
 switch ($action){
+
+    case "add-content":
+    include './views/new-content.php';
+    exit;
+    break;
+
     case "sign-in-process":
     $user = filter_input(INPUT_POST, 'username');
     $password = filter_input(INPUT_POST, 'password');

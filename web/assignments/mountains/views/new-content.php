@@ -1,8 +1,3 @@
-<?php
-if($_SESSION['loggedin'] != true){
-    header('Location: /assignments/mountains/');
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +5,10 @@ if($_SESSION['loggedin'] != true){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/assignments/mountains/css/style.css">
-    <title>Welcome Page</title>
+    <title>Add Peak</title>
 </head>
 <body>
-    <div id="wrapper">
+<div id="wrapper">
 <header>
 <h1>Colorado's 14ers</h1>
         <nav>
@@ -26,26 +21,20 @@ if($_SESSION['loggedin'] != true){
         </nav>
     </header>
     <main id="range">
-    <h2>Welcome <?php echo $_SESSION['user']['UserName'] ?></h2>
+        Add Peak
         <?php 
-            if($_SESSION['user']['UserLevel'] < 2){
-                echo "Sorry you don't have permissions for this page yet.";
+            if(isset($message)){
+                echo $message;
             }
-
-            if($_SESSION['user']['UserLevel'] > 1){
         ?>
-            <p><a href="/assignments/mountains/?action=add-content">Add a Mountain Peak</a></p>
-
-        <?php
-            }
-        ?> 
-
+        <form action="/assignments/mountains/" method="post">
+        
+        <input type="hidden" name="action" value="add-peak">
     </form>
     </main>
     <footer>
         <p>Last Ppdated 5/28/2019</p>
     </footer>
     </div>
-
 </body>
 </html>
