@@ -28,6 +28,11 @@
     </header>
     <main id="range">
         sign-up
+        <?php 
+            if(isset($message)){
+                echo $message;
+            }
+        ?>
         <form action="/assignments/mountains/?action=sign-up-process" method="post">
         <input type="text" name="username" id="username" placeholder="Enter email"><br>
         <input type="text" name="password" id="password" placeholder="Enter password"><br>
