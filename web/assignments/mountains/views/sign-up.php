@@ -31,7 +31,7 @@
         <form action="/assignments/mountains/?action=sign-up-process" method="post">
         <input type="text" name="username" id="username" placeholder="Enter email"><br>
         <input type="text" name="password" id="password" placeholder="Enter password"><br>
-        <input type="button" value="Sign up"><br>
+        <input type="submit" value="Sign up"><br>
     </form>
     </main>
     <footer>
