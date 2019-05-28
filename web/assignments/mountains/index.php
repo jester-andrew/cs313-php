@@ -19,8 +19,28 @@ $nav = createNavigation($_SESSION['ranges']);
 
 switch ($action){
     case "sign-in-process":
-    echo "sign-up-process";
-    include './views/sight-update.php';
+    $user = filter_input(INPUT_POST, 'username');
+    $password = filter_input(INPUT_POST, 'password');
+
+    if(empty($user) || empty($password)){
+        $message = "Please make sure to fill out all fields.";
+        include './views/sign-in.php';
+        exit;
+    }
+
+    $user = getUser($user);
+    $same = password_verify($password, $user['Password']);
+
+    if($same){
+        $_SESSION['loggedin'] = true;
+        $_SESSION['user'] = $user;
+        $_SESSION['Password'] = '';
+        var_dump($_SESSION);
+        include './views/site-update.php';
+        exit;
+    }
+    
+    include './views/sign-in.php';
     exit;
     break;
 
