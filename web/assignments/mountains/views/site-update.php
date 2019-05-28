@@ -1,8 +1,4 @@
-<?php
-if($_SESSION['loggedin'] != true){
-    header('Location: /assignments/mountains/');
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
