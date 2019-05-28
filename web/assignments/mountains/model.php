@@ -69,7 +69,7 @@ function addUser($user, $pw){
     $db = dbConnect();
     $sql = 'INSERT INTO public."Users"("UserName", "Password", "UserLevel") VALUES (:user, :pw, 1)';
     $stmt = $db->prepare($sql);
-    $stmt->bindValue(':id', $id, PDO::PARAM_STR);
+    $stmt->bindValue(':user', $user, PDO::PARAM_STR);
     $stmt->execute();
     $rowsChanged = $stmt->rowCount();
     $stmt->closeCursor();
