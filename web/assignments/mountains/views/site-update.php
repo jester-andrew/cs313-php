@@ -1,4 +1,8 @@
-
+<?php
+if($_SESSION['loggedin'] != true){
+    header('Location: /assignments/mountains/');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +15,7 @@
 <body>
     <div id="wrapper">
 <header>
-<h2>Welcome <?php echo $_SESSION['user']['UserName'] ?></h2>
+<h1>Colorado's 14ers</h1>
         <nav>
             <?php
             if(isset($nav)){
@@ -22,17 +26,12 @@
         </nav>
     </header>
     <main id="range">
-        sign-up
+    <h2>Welcome <?php echo $_SESSION['user']['UserName'] ?></h2>
         <?php 
             if(isset($message)){
                 echo $message;
             }
         ?>
-        <form action="/assignments/mountains/" method="post">
-        <input type="text" name="username" id="username" placeholder="Enter email"><br>
-        <input type="password" name="password" id="password" placeholder="Enter password"><br>
-        <input type="submit" value="Sign up"><br>
-        <input type="hidden" name="action" value="sign-up-process">
     </form>
     </main>
     <footer>
