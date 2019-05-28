@@ -29,9 +29,17 @@ if($_SESSION['loggedin'] != true){
     <h2>Welcome <?php echo $_SESSION['user']['UserName'] ?></h2>
         <?php 
             if($_SESSION['user']['UserLevel'] < 2){
-                echo "Sorry you don't have permissions for this page.";
+                echo "Sorry you don't have permissions for this page yet.";
             }
+
+            if($_SESSION['user']['UserLevel'] > 1){
         ?>
+            <p><a href="/assignments/mountains/?action=add-content">Add Content</a></p>
+
+        <?php
+            }
+        ?> 
+
     </form>
     </main>
     <footer>
