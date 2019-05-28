@@ -20,12 +20,12 @@ $nav = createNavigation($_SESSION['ranges']);
 switch ($action){
     case "sign-in-process":
     echo "sign-up-process";
-    include './views/sign-in.php';
+    include './views/sight-update.php';
     exit;
     break;
 
     case "sign-in":
-    include './views/site-update.php';
+    include './views/sign-in.php';
     exit;
     break;
 
