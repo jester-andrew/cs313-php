@@ -16,7 +16,7 @@
 <body>
 <div id="wrapper">
 <header>
-<h1>Sign-in | Colorado's 14ers</h1>
+<h1>Colorado's 14ers</h1>
         <nav>
             <?php
             if(isset($nav)){
