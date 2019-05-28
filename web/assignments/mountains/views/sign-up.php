@@ -16,7 +16,7 @@
 <body>
 <div id="wrapper">
 <header>
-<h1>Colorado's 14ers</h1>
+<h1>Sign-in | Colorado's 14ers</h1>
         <nav>
             <?php
             if(isset($nav)){
@@ -41,7 +41,7 @@
     </form>
     </main>
     <footer>
-        <p>Last Ppdated 5/22/2019</p>
+        <p>Last Ppdated 5/28/2019</p>
     </footer>
     </div>
 </body>

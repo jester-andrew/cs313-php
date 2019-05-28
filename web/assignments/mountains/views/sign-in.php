@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/assignments/mountains/css/style.css">
-    <title>Document</title>
+    <title>Sign-in | Colorado's 14ers</title>
 </head>
 <body>
 <div id="wrapper">
@@ -36,7 +36,7 @@
     <a href="/assignments/mountains/index.php?action=sign-up">Sign-up</a>
     </main>
     <footer>
-        <p>Last Ppdated 5/22/2019</p>
+        <p>Last Ppdated 5/28/2019</p>
     </footer>
     <div id="wrapper">
 </body>
