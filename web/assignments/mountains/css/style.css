@@ -119,7 +119,6 @@
         font-weight: bold;
     }
     
-    #peak input,
-    textarea {
+    #peak input {
         margin-bottom: 1em;
     }
