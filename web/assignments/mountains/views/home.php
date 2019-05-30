@@ -10,15 +10,7 @@
 <body>
 <div id="wrapper">
     <header>
-        <h1>Colorado's 14ers</h1>
-        <nav>
-            <?php
-            if(isset($nav)){
-                echo $nav;
-            }
-            ?>
-            <a href="/assignments/mountains/index.php?action=sign-in">Sign-in</a>
-        </nav>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/header.php'; ?>
     </header>
     <main id="home">
     <img src="/assignments/mountains/img/mt.-sneffles.jpg" alt="Sneffles" id="homeimg">
@@ -28,7 +20,7 @@
     this picture of Mt. Sneffles.</p>
     </main>
     <footer>
-        <p>Last Ppdated 5/23/2019</p>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/footer.php'; ?>
     </footer>
     <div id="wrapper">
 </body>

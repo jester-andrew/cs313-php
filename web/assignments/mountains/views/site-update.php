@@ -15,15 +15,7 @@ if($_SESSION['loggedin'] != true){
 <body>
     <div id="wrapper">
 <header>
-<h1>Colorado's 14ers</h1>
-        <nav>
-            <?php
-            if(isset($nav)){
-                echo $nav;
-            }
-            ?>
-            <a href="/assignments/mountains/index.php?action=sign-in">Sign-in</a>
-        </nav>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/header.php'; ?>
     </header>
     <main id="range">
     <h2>Welcome <?php echo $_SESSION['user']['UserName'] ?></h2>
@@ -43,7 +35,7 @@ if($_SESSION['loggedin'] != true){
     </form>
     </main>
     <footer>
-        <p>Last Ppdated 5/28/2019</p>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/footer.php'; ?>
     </footer>
     </div>
 

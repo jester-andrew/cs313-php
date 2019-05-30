@@ -16,15 +16,7 @@
 <body>
 <div id="wrapper">
 <header>
-<h1>Colorado's 14ers</h1>
-        <nav>
-            <?php
-            if(isset($nav)){
-                echo $nav;
-            }
-            ?>
-            <a href="/assignments/mountains/index.php?action=sign-in">Sign-in</a>
-        </nav>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/header.php'; ?>
     </header>
     <main id="range">
     <h1><?php echo $_SESSION['ranges'][$rangeID - 1]['RangeName']  ?></h1>
@@ -37,7 +29,7 @@
     ?>
     </main>
     <footer>
-        <p>Last Ppdated 5/23/2019</p>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/footer.php'; ?>
     </footer>
     </div>
 </body>
