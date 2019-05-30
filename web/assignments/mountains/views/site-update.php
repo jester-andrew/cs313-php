@@ -27,6 +27,7 @@ if($_SESSION['loggedin'] != true){
             if($_SESSION['user']['UserLevel'] > 1){
         ?>
             <p><a href="/assignments/mountains/?action=add-content">Add a Mountain Peak</a></p>
+            <p><a href="/assignments/mountains/?action=add-admin">Add Admin</a></p>
 
         <?php
             }

@@ -40,6 +40,18 @@ function createRangeSelect(){
     foreach($_SESSION['ranges'] as $range){
         $select .= '<option value="'.$range['ID'].'" >'.$range['RangeName'].'</option>';
     }
-    $select .= '<select class="range-select" name="rangeid">';
+    $select .= '</select>';
     return $select;
+}
+
+function selectAdmin($potentialAdmins){
+
+    $select = '<select class="admin-select" name="adminid">';
+    $select .= '<option value="" disabled selected>Pick a User</option>';
+    foreach($potentialAdmins as $admin){
+        $select .= '<option value="'.$admin['ID'].'" >'.$admin['UserName'].'</option>';
+    }
+    $select .= '</select>';
+    return $select;
+
 }

@@ -18,6 +18,17 @@ if(!isset($_SESSION['ranges'])){
 $nav = createNavigation($_SESSION['ranges']);
 
 switch ($action){
+
+    case "add-admin-process":
+    echo "corect place!";
+    break;
+    case "add-admin":
+    $potentialAdmins = getUsers();
+    $selectBox = selectAdmin($potentialAdmins);
+    include './views/add-admin.php';
+    exit;
+    break;
+
     case "sign-out":
     session_destroy();
     header("Location: /assignments/mountains/");

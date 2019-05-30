@@ -106,3 +106,15 @@ function insertMountainPeak($rangeId, $peakName, $elevation, $class, $link, $img
     $stmt->closeCursor();
     return $rowsChanged;
 }  
+
+function getUsers(){
+    $db = dbConnect();
+    $sql = 'SELECT * FROM "Users" WHERE "UserLevel" = 1;';
+    $stmt = $db->prepare($sql);
+    $stmt->execute();
+    $rUser = $stmt->fetchAll();
+    $stmt->closeCursor();
+    
+    return $rUser;
+
+}
