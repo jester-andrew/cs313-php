@@ -20,8 +20,11 @@ $nav = createNavigation($_SESSION['ranges']);
 switch ($action){
 
     case "add-admin-process":
-    echo "corect place!";
+    
+    $userId = filter_input(INPUT_POST, 'adminid');
+    echo "$userId";
     break;
+
     case "add-admin":
     $potentialAdmins = getUsers();
     $selectBox = selectAdmin($potentialAdmins);

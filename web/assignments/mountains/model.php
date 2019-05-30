@@ -52,6 +52,44 @@ function getMountainById($id){
     return $mountain;
 }
 
+function insertMountainPeak($rangeId, $peakName, $elevation, $class, $link, $imgpath, $info){
+    $db = dbConnect();
+    $sql = 'insert into public."Mountains" ("RangeID", "PeakName", "Elevation", "Dificulty", "Info", "Link", "imgpath") values (:id, :name, :elevation, :class, :info, :link, :path)';
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':id', $rangeId, PDO::PARAM_STR);
+    $stmt->bindValue(':name', $peakName, PDO::PARAM_STR);
+    $stmt->bindValue(':elevation', $elevation, PDO::PARAM_STR);
+    $stmt->bindValue(':class', $class, PDO::PARAM_STR);
+    $stmt->bindValue(':link', $link, PDO::PARAM_STR);
+    $stmt->bindValue(':path', $imgpath, PDO::PARAM_STR);
+    $stmt->bindValue(':info', $info, PDO::PARAM_STR);
+
+    $stmt->execute();
+    $rowsChanged = $stmt->rowCount();
+    $stmt->closeCursor();
+    return $rowsChanged;
+}
+
+function updateMountainPeak($rangeId, $peakName, $elevation, $class, $link, $imgpath, $info){
+    $db = dbConnect();
+    $sql = '';
+
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':id', $rangeId, PDO::PARAM_STR);
+    $stmt->bindValue(':name', $peakName, PDO::PARAM_STR);
+    $stmt->bindValue(':elevation', $elevation, PDO::PARAM_STR);
+    $stmt->bindValue(':class', $class, PDO::PARAM_STR);
+    $stmt->bindValue(':link', $link, PDO::PARAM_STR);
+    $stmt->bindValue(':path', $imgpath, PDO::PARAM_STR);
+    $stmt->bindValue(':info', $info, PDO::PARAM_STR);
+
+    $stmt->execute();
+    $rowsChanged = $stmt->rowCount();
+    $stmt->closeCursor();
+    return $rowsChanged;
+
+}
+
 //comments
 function getCommentsByMountainID($id){
     $db = dbConnect();
@@ -65,6 +103,7 @@ function getCommentsByMountainID($id){
     return $comments;
 }
 
+//user data
 function addUser($user, $pw){
     $db = dbConnect();
     $sql = 'INSERT INTO public."Users"("UserName", "Password", "UserLevel") VALUES (:user, :pw, 1)';
@@ -89,23 +128,19 @@ function getUser($user){
     return $rUser;
 }
 
-function insertMountainPeak($rangeId, $peakName, $elevation, $class, $link, $imgpath, $info){
+
+
+function updateUserLevel($id){
     $db = dbConnect();
-    $sql = 'insert into public."Mountains" ("RangeID", "PeakName", "Elevation", "Dificulty", "Info", "Link", "imgpath") values (:id, :name, :elevation, :class, :info, :link, :path)';
+    $sql = 'UPDATE "Users" set "UserLevel" = 2 WHERE "ID" = :id;';
+
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':id', $rangeId, PDO::PARAM_STR);
-    $stmt->bindValue(':name', $peakName, PDO::PARAM_STR);
-    $stmt->bindValue(':elevation', $elevation, PDO::PARAM_STR);
-    $stmt->bindValue(':class', $class, PDO::PARAM_STR);
-    $stmt->bindValue(':link', $link, PDO::PARAM_STR);
-    $stmt->bindValue(':path', $imgpath, PDO::PARAM_STR);
-    $stmt->bindValue(':info', $info, PDO::PARAM_STR);
-
     $stmt->execute();
     $rowsChanged = $stmt->rowCount();
     $stmt->closeCursor();
     return $rowsChanged;
-}  
+}
 
 function getUsers(){
     $db = dbConnect();
