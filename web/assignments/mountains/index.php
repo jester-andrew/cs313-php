@@ -19,6 +19,20 @@ $nav = createNavigation($_SESSION['ranges']);
 
 switch ($action){
 
+    case "add-peak":
+    $rangeId = filter_input(INPUT_POST, 'rangeid');
+    $peakName = filter_input(INPUT_POST, 'peak-name');
+    $elevation = filter_input(INPUT_POST, 'elevation');
+    $class = filter_input(INPUT_POST, 'class');
+    $link = filter_input(INPUT_POST, 'link');
+    $imgpath = filter_input(INPUT_POST, 'img-path');
+    $info = filter_input(INPUT_POST, 'info');
+    echo "$rangeId, $peakName, $elevation, $class, $link, $imgpath, $info";
+    $selectRange = createRangeSelect();
+    include './views/new-content.php';
+    exit;
+    break;
+
     case "add-content":
     $selectRange = createRangeSelect();
     include './views/new-content.php';
