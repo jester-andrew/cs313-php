@@ -24,8 +24,9 @@
     <input type="password" name="password" id="password" placeholder="Enter password"><br>
     <input type="hidden" name="action" value="sign-in-process">
     <input type="submit" value="Sign in"><br>
-    </form>
     <a href="/assignments/mountains/index.php?action=sign-up" class="center">Sign-up</a>
+    </form>
+    
     </main>
     <footer>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/footer.php'; ?>
