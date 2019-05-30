@@ -14,6 +14,11 @@
     </header>
     <main id="range">
     <h2>Add Admin</h2>
+    <?php 
+    if(isset($message)){
+        echo $message;
+    }
+    ?>
     <form action="/assignments/mountains/" method="POST">
     <?php 
     if(isset($selectBox)){
