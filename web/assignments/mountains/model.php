@@ -135,7 +135,7 @@ function updateUserLevel($id){
     $sql = 'UPDATE "Users" set "UserLevel" = 2 WHERE "ID" = :id;';
 
     $stmt = $db->prepare($sql);
-    $stmt->bindValue(':id', $rangeId, PDO::PARAM_STR);
+    $stmt->bindValue(':id', $id, PDO::PARAM_STR);
     $stmt->execute();
     $rowsChanged = $stmt->rowCount();
     $stmt->closeCursor();
