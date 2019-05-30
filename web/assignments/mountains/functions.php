@@ -33,3 +33,7 @@ function buildMountainPage($mountain){
 
     return $page;
 }
+
+function reateRangeSelect(){
+    var_dump($_SESSION['ranges']);
+}

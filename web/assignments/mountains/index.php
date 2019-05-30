@@ -20,6 +20,7 @@ $nav = createNavigation($_SESSION['ranges']);
 switch ($action){
 
     case "add-content":
+    $selectRange = createRangeSelect();
     include './views/new-content.php';
     exit;
     break;
