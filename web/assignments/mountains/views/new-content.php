@@ -33,6 +33,7 @@
             echo $selectRange;
         }
         ?>
+        <br>
         <input type="text" name="peak-name" id="peak" placeholder="Peak Name"><br>
         <input type="text" name="elevation" id="elevation" placeholder="Elevation in feet"><br>
         <input type="text" name="class" id="class" placeholder="class: 1-5"><br>
