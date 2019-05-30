@@ -19,7 +19,7 @@
                 echo $message;
             }
         ?>
-        <form action="/assignments/mountains/" method="post">
+        <form action="/assignments/mountains/" method="post" id="peak-add">
         <?php
         if(isset($selectRange)){
             echo $selectRange;
