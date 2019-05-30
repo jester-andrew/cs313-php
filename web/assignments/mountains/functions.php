@@ -36,7 +36,7 @@ function buildMountainPage($mountain){
 
 function createRangeSelect(){
     $select = '<select class="range-select" name="rangeid">';
-    $select .= '<option value="" disabled>Pick a Range</option>';
+    $select .= '<option value="" disabled selected>Pick a Range</option>';
     foreach($_SESSION['ranges'] as $range){
         $select .= '<option value="'.$range['ID'].'" >'.$range['RangeName'].'</option>';
     }
