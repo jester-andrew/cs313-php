@@ -4,6 +4,15 @@
     if(isset($nav)){
         echo $nav;
     }
+
+    if(!isset($_SESSION['loggedin'])){
     ?>
     <a href="/assignments/mountains/index.php?action=sign-in">Sign-in</a>
+    <?php 
+    }else if($_SESSION['loggedin']){
+    ?>
+    <p><a href="/assignments/mountains/index.php?action=sign-out">Sign-out</a> | <a href="/assignments/mountains/index.php?action=account">Account</a></p>
+    <?php 
+    }
+    ?>
 </nav>

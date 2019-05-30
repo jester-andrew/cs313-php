@@ -18,6 +18,16 @@ if(!isset($_SESSION['ranges'])){
 $nav = createNavigation($_SESSION['ranges']);
 
 switch ($action){
+    case "sign-out":
+    session_destroy();
+    header("Location: /assignments/mountains/");
+    exit;
+    break;
+
+    case "account":
+    include './views/site-update.php';
+    exit;
+    break;
 
     case "add-peak":
     $rangeId = filter_input(INPUT_POST, 'rangeid');
