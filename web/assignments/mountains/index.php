@@ -27,7 +27,21 @@ switch ($action){
     $link = filter_input(INPUT_POST, 'link');
     $imgpath = filter_input(INPUT_POST, 'img-path');
     $info = filter_input(INPUT_POST, 'info');
-    echo "$rangeId, $peakName, $elevation, $class, $link, $imgpath, $info";
+    if(empty($rangeId) || empty($peakName) || empty($elevation) || empty($class) || empty($link) || empty($imgpath) || empty($info)){
+        $message = "Make sure all feilds are filled in.";
+        include './views/new-content.php';
+        exit;
+    }
+
+    $success = insertMountainPeak($rangeId, $peakName, $elevation, $class, $link, $imgpath, $info);
+
+    if(!$success){
+        $message = "An error occured and the peak could not be inserted into the database.";
+        include './views/new-content.php';
+        exit; 
+    }
+
+    $message = "The new mountain peak was inserted successfully!";
     $selectRange = createRangeSelect();
     include './views/new-content.php';
     exit;

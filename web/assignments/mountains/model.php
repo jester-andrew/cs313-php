@@ -88,3 +88,21 @@ function getUser($user){
     
     return $rUser;
 }
+
+function insertMountainPeak($rangeId, $peakName, $elevation, $class, $link, $imgpath, $info){
+    $db = dbConnect();
+    $sql = 'insert into public."Mountains" ("RangeID", "PeakName", "Elevation", "Dificulty", "Info", "Link", "imgpath") values (:id, :name, :elevation, :class, :info, :link, :path)';
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':id', $rangeId, PDO::PARAM_STR);
+    $stmt->bindValue(':name', $peakName, PDO::PARAM_STR);
+    $stmt->bindValue(':elevation', $elevation, PDO::PARAM_STR);
+    $stmt->bindValue(':class', $class, PDO::PARAM_STR);
+    $stmt->bindValue(':link', $link, PDO::PARAM_STR);
+    $stmt->bindValue(':path', $imgpath, PDO::PARAM_STR);
+    $stmt->bindValue(':info', $info, PDO::PARAM_STR);
+
+    $stmt->execute();
+    $rowsChanged = $stmt->rowCount();
+    $stmt->closeCursor();
+    return $rowsChanged;
+}  
