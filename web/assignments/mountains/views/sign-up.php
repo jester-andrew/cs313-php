@@ -19,7 +19,7 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/header.php'; ?>
 </header>
     <main id="range">
-        sign-up
+       <h2>sign-up</h2> 
         <?php 
             if(isset($message)){
                 echo $message;

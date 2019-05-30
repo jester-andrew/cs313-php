@@ -13,7 +13,7 @@
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/header.php'; ?>
     </header>
     <main>
-    Sign-in
+    <h2>Sign-in</h2>
     <?php 
             if(isset($message)){
                 echo $message;
