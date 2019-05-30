@@ -22,7 +22,23 @@ switch ($action){
     case "add-admin-process":
     
     $userId = filter_input(INPUT_POST, 'adminid');
-    echo "$userId";
+    if(empty($userId)){
+        $message = 'No user selected.';
+        include './views/add-admin.php';
+        exit;
+    }
+
+    $success = updateUserLevel($userId);
+
+    if($success){
+        $message = 'You have added admin privleges for that user! Have them sign in to use admin priveleges.';
+        include './views/add-admin.php';
+        exit;
+    }else{
+        $message = 'An error occured please try again.';
+        include './views/add-admin.php';
+        exit; 
+    }
     break;
 
     case "add-admin":
