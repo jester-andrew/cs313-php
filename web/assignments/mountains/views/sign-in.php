@@ -19,7 +19,7 @@
                 echo $message;
             }
         ?>
-    <form action="/assignments/mountains/" method="post">
+    <form action="/assignments/mountains/" method="post" id="peak-add">
     <input type="text" name="username" id="username" placeholder="Enter email"><br>
     <input type="password" name="password" id="password" placeholder="Enter password"><br>
     <input type="hidden" name="action" value="sign-in-process">
