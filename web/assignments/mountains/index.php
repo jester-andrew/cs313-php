@@ -20,6 +20,9 @@ $nav = createNavigation($_SESSION['ranges']);
 switch ($action){
 
     case "add-admin-process":
+
+    $potentialAdmins = getUsers();
+    $selectBox = selectAdmin($potentialAdmins);
     
     $userId = filter_input(INPUT_POST, 'adminid');
     if(empty($userId)){
