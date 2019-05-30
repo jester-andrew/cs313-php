@@ -13,7 +13,7 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/header.php'; ?>
     </header>
     <main id="range">
-        Add Peak
+        <h2>Add Peak</h2>
         <?php 
             if(isset($message)){
                 echo $message;
