@@ -31,8 +31,8 @@ if($_SESSION['loggedin'] != true){
 
             <h3>Edit Peak Information</h3>
             <?php 
-                if(isset($peaksLinks)){
-                    echo $peaksLinks;
+                if(isset($peakLinks)){
+                    echo $peakLinks;
                 }
             ?>
 
