@@ -43,7 +43,7 @@ switch ($action){
     }
 
     $message = "$peakName was updated successfully!";
-    
+
     $peaks = getAllMountains();
     $peakLinks = getPeakLinks($peaks);
 
@@ -230,6 +230,12 @@ switch ($action){
     $peakId = filter_input(INPUT_GET, 'id');
     $peak = getMountainById($peakId);
     $page = buildMountainPage($peak);
+
+    $comments = getCommentsByMountainID($peakId);
+    var_dump($comments);
+    exit;
+    $commentDsiplay = createComments($comments);
+
     include './views/peak.php';
     break;
 

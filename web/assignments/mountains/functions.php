@@ -66,3 +66,11 @@ function getPeakLinks($peaks){
     return $links;
 
 }
+
+function createComments($comments){
+    $commentDisp = '<div>';
+    foreach($comments as $comment){
+        
+    }
+    $commentDisp = '</div>';
+}
