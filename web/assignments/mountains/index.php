@@ -19,6 +19,36 @@ $nav = createNavigation($_SESSION['ranges']);
 
 switch ($action){
 
+    case "edit-peak-process":
+    $peakId = filter_input(INPUT_POST, 'peakId');
+    $rangeId = filter_input(INPUT_POST, 'rangeid');
+    $peakName = filter_input(INPUT_POST, 'peak-name');
+    $elevation = filter_input(INPUT_POST, 'elevation');
+    $class = filter_input(INPUT_POST, 'class');
+    $link = filter_input(INPUT_POST, 'link');
+    $imgpath = filter_input(INPUT_POST, 'img-path');
+    $info = filter_input(INPUT_POST, 'info');
+    if(empty($rangeId) || empty($peakName) || empty($elevation) || empty($class) || empty($link) || empty($imgpath) || empty($info)){
+        $message = "Make sure all feilds are filled in.";
+        include './views/edit-peak.php';
+        exit;
+    }
+
+    $success = updateMountainPeak($rangeId, $peakName, $elevation, $class, $link, $imgpath, $info, $peakId);
+
+    if(!$success){
+        $message = "An error occured and $peakName could not be updated.";
+        include './views/edit-peak';
+        exit; 
+    }
+
+    $message = "$peakName was updated successfully!";
+    $selectRange = createRangeSelect();
+    include './views/site-update.php';
+    exit;
+    
+    break;
+
     case "update-peak":
     $id = $action = filter_input(INPUT_GET, 'id');
     $peak = getMountainById($id);

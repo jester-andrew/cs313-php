@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/assignments/mountains/css/style.css">
-    <title>Add Peak</title>
+    <title>Edit <?php if(isset($peak['PeakName'])){echo $peak['PeakName'];}?></title>
 </head>
 <body>
 <div id="wrapper">
@@ -42,6 +42,8 @@
 
         <input type="submit" value="Edit Peak">
         <input type="hidden" name="action" value="edit-peak-process">
+        <input type="hidden" name="peakId" value="<?php if(isset($peak['ID'])){echo $peak['ID'];}?>">
+        
     </form>
     </main>
     <footer>

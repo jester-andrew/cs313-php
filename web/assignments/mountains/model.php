@@ -82,9 +82,9 @@ function insertMountainPeak($rangeId, $peakName, $elevation, $class, $link, $img
     return $rowsChanged;
 }
 
-function updateMountainPeak($rangeId, $peakName, $elevation, $class, $link, $imgpath, $info){
+function updateMountainPeak($rangeId, $peakName, $elevation, $class, $link, $imgpath, $info, $mountId){
     $db = dbConnect();
-    $sql = '';
+    $sql = 'UPDATE "Mountains" SET "RangeID" = :id, "PeakName" = :name, "Elevation" = :elevation, "Dificulty" = :class, "Info" = :info, "Link" = :link, "imgpath" = :path WHERE "ID" = :mountId;';
 
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':id', $rangeId, PDO::PARAM_STR);
@@ -94,6 +94,7 @@ function updateMountainPeak($rangeId, $peakName, $elevation, $class, $link, $img
     $stmt->bindValue(':link', $link, PDO::PARAM_STR);
     $stmt->bindValue(':path', $imgpath, PDO::PARAM_STR);
     $stmt->bindValue(':info', $info, PDO::PARAM_STR);
+    $stmt->bindValue(':mountId', $mountId, PDO::PARAM_STR);
 
     $stmt->execute();
     $rowsChanged = $stmt->rowCount();
