@@ -55,3 +55,14 @@ function selectAdmin($potentialAdmins){
     return $select;
 
 }
+
+function getPeakLinks($peaks){
+    $links = "<ul>";
+    foreach($peaks as $peak){
+        $links .= "<li><a href='/assignments/mountains/?action=update-peak&id=$peak[ID]' >Edit $peak[PeakName]</a></a>";
+    }
+    $links .= "<ul>";
+
+    return $links;
+
+}

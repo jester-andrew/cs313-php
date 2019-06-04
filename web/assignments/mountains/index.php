@@ -113,6 +113,12 @@ switch ($action){
     if($same){
         $_SESSION['loggedin'] = true;
         $_SESSION['user'] = $user;
+
+        //get peaklinks
+        $peaks = getAllMountains();
+
+        $peakLinks = getPeakLinks($peaks);
+
         include './views/site-update.php';
         exit;
     }

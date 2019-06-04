@@ -52,6 +52,18 @@ function getMountainById($id){
     return $mountain;
 }
 
+function getAllMountains(){
+
+    $db = dbConnect();
+    $sql = 'SELECT * FROM "Mountains";';
+    $stmt = $db->prepare($sql);
+    $stmt->execute();
+    $mountains = $stmt->fetchAll();
+    $stmt->closeCursor();
+
+    return $mountains;
+}
+
 function insertMountainPeak($rangeId, $peakName, $elevation, $class, $link, $imgpath, $info){
     $db = dbConnect();
     $sql = 'insert into public."Mountains" ("RangeID", "PeakName", "Elevation", "Dificulty", "Info", "Link", "imgpath") values (:id, :name, :elevation, :class, :info, :link, :path)';
