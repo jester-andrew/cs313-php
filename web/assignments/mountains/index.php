@@ -19,6 +19,15 @@ $nav = createNavigation($_SESSION['ranges']);
 
 switch ($action){
 
+    case "update-peak":
+    $id = $action = filter_input(INPUT_GET, 'id');
+    $peak = getMountainById($id);
+
+    include './views/edit-peak.php';
+    exit;
+    
+    break;
+
     case "add-admin-process":
 
     $potentialAdmins = getUsers();
