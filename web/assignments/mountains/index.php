@@ -58,6 +58,8 @@ switch ($action){
     break;
 
     case "account":
+    $peaks = getAllMountains();
+    $peakLinks = getPeakLinks($peaks);
     include './views/site-update.php';
     exit;
     break;
