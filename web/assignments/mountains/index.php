@@ -43,6 +43,10 @@ switch ($action){
     }
 
     $message = "$peakName was updated successfully!";
+    
+    $peaks = getAllMountains();
+    $peakLinks = getPeakLinks($peaks);
+
     $selectRange = createRangeSelect();
     include './views/site-update.php';
     exit;
@@ -50,7 +54,7 @@ switch ($action){
     break;
 
     case "update-peak":
-    $id = $action = filter_input(INPUT_GET, 'id');
+    $id = filter_input(INPUT_GET, 'id');
     $peak = getMountainById($id);
 
     $ranges = getRanges();

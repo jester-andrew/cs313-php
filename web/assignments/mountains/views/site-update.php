@@ -28,7 +28,11 @@ if($_SESSION['loggedin'] != true){
         ?>
             <p><a href="/assignments/mountains/?action=add-content">Add a Mountain Peak</a></p>
             <p><a href="/assignments/mountains/?action=add-admin">Add Admin</a></p>
-
+            <?php
+            if(isset($message)){
+                echo $message;
+            }
+            ?>
             <h3>Edit Peak Information</h3>
             <?php 
                 if(isset($peakLinks)){
