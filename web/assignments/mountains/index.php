@@ -23,6 +23,19 @@ switch ($action){
     $id = $action = filter_input(INPUT_GET, 'id');
     $peak = getMountainById($id);
 
+    $ranges = getRanges();
+    
+    $select = '<select class="range-select" name="rangeid">';
+    $select .= '<option value="" disabled selected>Pick a Range</option>';
+    foreach($ranges as $range){
+        if($range['ID'] == $peak['RangeID']){
+            $select .= '<option value="'.$range['ID'].'" selected >'.$range['RangeName'].'</option>';
+        }else{
+            $select .= '<option value="'.$range['ID'].'" >'.$range['RangeName'].'</option>';
+        }
+    }
+        $select .= '</select>';
+
     include './views/edit-peak.php';
     exit;
     

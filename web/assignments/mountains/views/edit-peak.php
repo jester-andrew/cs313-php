@@ -20,10 +20,11 @@
             }
         ?>
         <form action="/assignments/mountains/" method="post" id="peak-add">
-        <?php
-        if(isset($selectRange)){
-            echo $selectRange;
-        }
+        <label for="rages">Range:</label>
+        <?php 
+            if(isset($select)){
+                echo $select; 
+            }
         ?>
         <br>
         <label for="peak">Peak Name:</label>
