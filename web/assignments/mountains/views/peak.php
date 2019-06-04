@@ -30,6 +30,10 @@
         if(isset($page)){
             echo $page;
         }
+
+        if(isset($commentDsiplay)){
+            echo $commentDsiplay;
+        }
     ?>
     </main>
     <footer>

@@ -231,9 +231,7 @@ switch ($action){
     $peak = getMountainById($peakId);
     $page = buildMountainPage($peak);
 
-    // $comments = getCommentsByMountainID($peakId);
-    // var_dump($comments);
-    // exit;
+    $comments = getCommentsByMountainID($peakId);
     $commentDsiplay = createComments($comments);
 
     include './views/peak.php';
