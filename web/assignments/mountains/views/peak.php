@@ -30,9 +30,23 @@
         if(isset($page)){
             echo $page;
         }
-
-        if(isset($commentDsiplay)){
+    ?>
+    <h2>Comments</h2>
+    <?php 
+         if(isset($commentDsiplay)){
             echo $commentDsiplay;
+        }
+
+        if($_SESSION['loggedin'] == true){
+    ?>
+            <form action="/assignments/mountains/" method="post">
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <input type="submit" value="Add Comment">
+                <input type="hidden" name="peak-id" value="<?php echo $peak['ID'] ?>">
+                <input type="hidden" name="user-id" value="<?php echo $_SESSION['user']['ID'] ?>">
+                <input type="hidden" name="action" value="add-comment">
+            </form>
+    <?php 
         }
     ?>
     </main>

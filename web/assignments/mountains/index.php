@@ -18,6 +18,15 @@ if(!isset($_SESSION['ranges'])){
 $nav = createNavigation($_SESSION['ranges']);
 
 switch ($action){
+    case "add-comment":
+    $comment = filter_input(INPUT_POST, 'comment');
+    $userId = filter_input(INPUT_POST, 'user-id');
+    $peakId = filter_input(INPUT_POST, 'peak-id');
+
+    echo "$comment, $userId, $peakId";
+    exit;
+
+    break;
 
     case "edit-peak-process":
     $peakId = filter_input(INPUT_POST, 'peakId');
