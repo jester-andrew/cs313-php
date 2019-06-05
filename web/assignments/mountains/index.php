@@ -34,7 +34,7 @@ switch ($action){
     $success = insertComment($userId, $peakId, $comment);
 
     if($success){
-        header("Refresh:0");
+        header("Location: /assignments/mountains/?action=peak&id=".$peakId);
         exit;
     }
 
