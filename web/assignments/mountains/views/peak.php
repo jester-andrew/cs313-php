@@ -33,7 +33,7 @@
     ?>
     
     <?php 
-         if(isset($commentDsiplay)){
+         if(isset($commentDsiplay) && $commentDsiplay != ""){
             echo "<h2>Comments</h2>";
             echo $commentDsiplay;
         }
