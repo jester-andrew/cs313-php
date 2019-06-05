@@ -40,6 +40,11 @@
 
         if($_SESSION['loggedin'] == true){
     ?>
+            <?php 
+                if(isset($message)){
+                    echo $message;
+                }
+            ?>
             <form action="/assignments/mountains/" method="post">
                 <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
                 <input type="submit" value="Add Comment">
