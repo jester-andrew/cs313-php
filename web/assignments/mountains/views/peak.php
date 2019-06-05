@@ -31,9 +31,10 @@
             echo $page;
         }
     ?>
-    <h2>Comments</h2>
+    
     <?php 
          if(isset($commentDsiplay)){
+            echo "<h2>Comments</h2>";
             echo $commentDsiplay;
         }
 

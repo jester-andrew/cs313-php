@@ -116,6 +116,20 @@ function getCommentsByMountainID($id){
     return $comments;
 }
 
+function insertComment($userId, $peakId, $comment){
+    $db = dbConnect();
+    $sql = 'INSERT INTO "Comments" ("UserID", "PeakID", "Comment") VALUES (:userId, :peakId, :comment);';
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':userId', $userId, PDO::PARAM_STR);
+    $stmt->bindValue(':peakId', $peakId, PDO::PARAM_STR);
+    $stmt->bindValue(':comment', $comment, PDO::PARAM_STR);
+    $stmt->execute();
+    $rowsChanged = $stmt->rowCount();
+    $stmt->closeCursor();
+
+    return $rowsChanged;
+}
+
 //user data
 function addUser($user, $pw){
     $db = dbConnect();

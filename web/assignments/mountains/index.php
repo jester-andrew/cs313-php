@@ -23,8 +23,28 @@ switch ($action){
     $userId = filter_input(INPUT_POST, 'user-id');
     $peakId = filter_input(INPUT_POST, 'peak-id');
 
-    echo "$comment, $userId, $peakId";
+    if(empty($comment)){
+        $message = "Please write a message before submitting.";
+        $peak = getMountainById($peakId);
+        $page = buildMountainPage($peak);
+        include './views/edit-peak.php';
+        exit;
+    }
+
+    $success = insertComment($userId, $peakId, $comment);
+
+    if($success){
+        header("Refresh:0");
+        exit;
+    }
+
+    $message = "Having trouble inserting your comment. Please try again later.";
+    $peak = getMountainById($peakId);
+    $page = buildMountainPage($peak);
+    include './views/edit-peak.php';
     exit;
+
+
 
     break;
 
