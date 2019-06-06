@@ -17,7 +17,7 @@ if($_SESSION['loggedin'] != true){
 <header>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/assignments/mountains/content/header.php'; ?>
     </header>
-    <main id="range">
+    <main id="edit-peak">
     <h2>Welcome <?php echo $_SESSION['user']['UserName'] ?></h2>
         <?php 
             if($_SESSION['user']['UserLevel'] < 2){
