@@ -169,7 +169,7 @@
         margin-left: 2em;
     }
     
-    #btn {
-        margin-left: 5em;
+    form #btn {
         font-size: 2em;
+        text-align: center;
     }
