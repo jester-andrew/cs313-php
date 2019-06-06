@@ -74,5 +74,5 @@ values (3, 'Mount Elbert', '14440', 2, 'Mount Elbert is the highest summit of th
 /*******************************************
 * Altering tables
 *******************************************/
-alter table public."Users" 
-add ImgPath text 
+ALTER TABLE public."Mountains" 
+ADD ImgPath text;
