@@ -168,3 +168,8 @@
         border-radius: 3px;
         margin-left: 2em;
     }
+    
+    #btn {
+        margin-left: 2em;
+        font-size: 1.2em;
+    }
