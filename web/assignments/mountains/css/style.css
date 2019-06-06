@@ -161,3 +161,10 @@
         padding: 1em;
         border-radius: 5px;
     }
+    
+    #comment-text {
+        width: 75%;
+        padding: 1em;
+        border-radius: 3px;
+        margin-left: 2em;
+    }
