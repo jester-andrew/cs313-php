@@ -151,4 +151,6 @@
     #comment .comment {
         background-color: white;
         margin-left: 2em;
+        color: white;
+        font-weight: bold;
     }
