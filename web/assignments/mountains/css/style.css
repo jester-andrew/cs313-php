@@ -190,6 +190,7 @@
     #edit-peak a {
         text-decoration: none;
         color: rgb(8, 28, 89);
+        margin-left: 2em;
     }
     
     #edit-peak a:hover {
