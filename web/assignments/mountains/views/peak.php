@@ -47,7 +47,7 @@
             ?>
             <h2>Add a Comment</h2>
             <form action="/assignments/mountains/" method="post">
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
+                <textarea name="comment" id="comment-text" cols="30" rows="10"></textarea><br>
                 <input type="submit" value="Add Comment">
                 <input type="hidden" name="peak-id" value="<?php echo $peak['ID'] ?>">
                 <input type="hidden" name="user-id" value="<?php echo $_SESSION['user']['ID'] ?>">
