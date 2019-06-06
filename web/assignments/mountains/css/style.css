@@ -148,6 +148,8 @@
         background-color: rgb(8, 28, 89);
         color: white;
         font-weight: bold;
+        width: 75%;
+        padding: 1em;
     }
     
     #comment .comment {
