@@ -196,3 +196,8 @@
     #edit-peak a:hover {
         text-decoration: underline;
     }
+    
+    #edit-peak h2,
+    h3 {
+        margin-left: 2em;
+    }
