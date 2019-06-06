@@ -188,6 +188,6 @@
         color: rgb(8, 28, 89);
     }
     
-    #edit-peak:hover {
+    #edit-peak a:hover {
         text-decoration: underline;
     }
