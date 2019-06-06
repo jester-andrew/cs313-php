@@ -27,7 +27,7 @@ switch ($action){
         $message = "Please write a message before submitting.";
         $peak = getMountainById($peakId);
         $page = buildMountainPage($peak);
-        include './views/edit-peak.php';
+        header("Location: /assignments/mountains/?action=peak&id=".$peakId);
         exit;
     }
 
@@ -41,7 +41,7 @@ switch ($action){
     $message = "Having trouble inserting your comment. Please try again later.";
     $peak = getMountainById($peakId);
     $page = buildMountainPage($peak);
-    include './views/edit-peak.php';
+    header("Location: /assignments/mountains/?action=peak&id=".$peakId);
     exit;
 
 
