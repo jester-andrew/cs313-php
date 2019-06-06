@@ -143,3 +143,12 @@
         margin-right: auto;
         text-align: center;
     }
+    
+    #comment {
+        background-color: rgb(8, 28, 89);
+    }
+    
+    #comment .user {
+        background-color: white;
+        margin-left: 2em;
+    }

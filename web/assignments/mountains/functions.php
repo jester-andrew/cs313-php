@@ -68,7 +68,7 @@ function getPeakLinks($peaks){
 }
 
 function createComments($comments){
-    $commentDisp = '<div>';
+    $commentDisp = '<div id="comment">';
     foreach($comments as $comment){
         $commentDisp .= "<p class='user'>$comment[UserName]</p>";
         $commentDisp .= "<p class='comment'>$comment[Comment]</p>";
