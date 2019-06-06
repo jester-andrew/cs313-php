@@ -28,17 +28,17 @@
         ?>
         <br>
         <label for="peak">Peak Name:</label>
-        <input type="text" name="peak-name" id="peak" placeholder="Peak Name" value="<?php if(isset($peak['PeakName'])){echo $peak['PeakName'];}?>"><br>
+        <input  required type="text" name="peak-name" id="peak" placeholder="Peak Name" value="<?php if(isset($peak['PeakName'])){echo $peak['PeakName'];}?>"><br>
         <label for="peak">Elevation:</label>
-        <input type="text" name="elevation" id="elevation" placeholder="Elevation ex: 14000" value="<?php if(isset($peak['Elevation'])){echo $peak['Elevation'];}?>"><br>
+        <input required type="text" name="elevation" id="elevation" placeholder="Elevation ex: 14000" value="<?php if(isset($peak['Elevation'])){echo $peak['Elevation'];}?>"><br>
         <label for="peak">Class:</label>
-        <input type="text" name="class" id="class" placeholder="class: 1-5" value="<?php if(isset($peak['Dificulty'])){echo $peak['Dificulty'];}?>"><br>
+        <input  required type="text" name="class" id="class" placeholder="class: 1-5" value="<?php if(isset($peak['Dificulty'])){echo $peak['Dificulty'];}?>"><br>
         <label for="peak">14ers.com Link:</label>
-        <input type="text" name="link" id="link" placeholder="14ers.com link" value="<?php if(isset($peak['Link'])){echo $peak['Link'];}?>" ><br>
+        <input required type="text" name="link" id="link" placeholder="14ers.com link" value="<?php if(isset($peak['Link'])){echo $peak['Link'];}?>" ><br>
         <label for="peak">Image Path:</label>
-        <input type="text" name="img-path" id="path" value="<?php if(isset($peak['imgpath'])){echo $peak['imgpath'];}?>"><br>
+        <input required type="text" name="img-path" id="path" value="<?php if(isset($peak['imgpath'])){echo $peak['imgpath'];}?>"><br>
         <label for="peak">Info:</label>
-        <textarea name="info" id="info" cols="50" rows="10"><?php if(isset($peak['Info'])){echo $peak['Info'];}?></textarea><br>
+        <textarea required name="info" id="info" cols="50" rows="10"><?php if(isset($peak['Info'])){echo $peak['Info'];}?></textarea><br>
 
         <input type="submit" value="Edit Peak">
         <input type="hidden" name="action" value="edit-peak-process">

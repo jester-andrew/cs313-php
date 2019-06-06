@@ -26,12 +26,12 @@
         }
         ?>
         <br>
-        <input type="text" name="peak-name" id="peak" placeholder="Peak Name"><br>
-        <input type="text" name="elevation" id="elevation" placeholder="Elevation ex: 14000"><br>
-        <input type="text" name="class" id="class" placeholder="class: 1-5"><br>
-        <input type="text" name="link" id="link" placeholder="14ers.com link"><br>
-        <input type="text" name="img-path" id="path" value="/assignments/mountains/img/IMAGE-NAME-HERE.jpg"><br>
-        <textarea name="info" id="info" cols="50" rows="10">Mountain peak info here</textarea><br>
+        <input required type="text" name="peak-name" id="peak" placeholder="Peak Name"><br>
+        <input required type="text" name="elevation" id="elevation" placeholder="Elevation ex: 14000"><br>
+        <input required type="text" name="class" id="class" placeholder="class: 1-5"><br>
+        <input required type="text" name="link" id="link" placeholder="14ers.com link"><br>
+        <input required type="text" name="img-path" id="path" value="/assignments/mountains/img/IMAGE-NAME-HERE.jpg"><br>
+        <textarea required name="info" id="info" cols="50" rows="10">Mountain peak info here</textarea><br>
 
         <input type="submit" value="Add Peak">
         <input type="hidden" name="action" value="add-peak">

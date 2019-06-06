@@ -26,8 +26,8 @@
             }
         ?>
         <form action="/assignments/mountains/" method="post" id="peak-add">
-        <input type="text" name="username" id="username" placeholder="Enter email"><br>
-        <input type="password" name="password" id="password" placeholder="Enter password"><br>
+        <input required type="text" name="username" id="username" placeholder="Enter email"><br>
+        <input required type="password" name="password" id="password" placeholder="Enter password"><br>
         <input type="submit" value="Sign up"><br>
         <input type="hidden" name="action" value="sign-up-process">
     </form>
