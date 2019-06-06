@@ -51,7 +51,7 @@
                 <input type="submit" value="Add Comment">
                 <input type="hidden" name="peak-id" value="<?php echo $peak['ID'] ?>">
                 <input type="hidden" name="user-id" value="<?php echo $_SESSION['user']['ID'] ?>">
-                <input type="hidden" name="action" value="add-comment" id="btn">
+                <input type="hidden" name="action" value="add-comment" id="btn" >
             </form>
     <?php 
         }
