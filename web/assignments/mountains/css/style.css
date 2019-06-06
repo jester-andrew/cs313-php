@@ -177,3 +177,17 @@
     #edit-peak {
         padding-left: 0;
     }
+    
+    #edit-peak li {
+        list-style: none;
+        margin-bottom: 1em;
+    }
+    
+    #edit-peak a {
+        text-decoration: none;
+        color: rgb(8, 28, 89);
+    }
+    
+    #edit-peak:hover {
+        text-decoration: underline;
+    }
