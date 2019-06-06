@@ -150,6 +150,7 @@
         font-weight: bold;
         width: 75%;
         padding: 1em;
+        border-radius: 3px;
     }
     
     #comment .comment {
