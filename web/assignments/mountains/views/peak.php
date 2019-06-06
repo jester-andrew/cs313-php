@@ -48,10 +48,10 @@
             <h2>Add a Comment</h2>
             <form action="/assignments/mountains/" method="post">
                 <textarea name="comment" id="comment-text" cols="30" rows="10"></textarea><br>
-                <input type="submit" value="Add Comment">
+                <input type="submit" value="Add Comment" id="btn">
                 <input type="hidden" name="peak-id" value="<?php echo $peak['ID'] ?>">
                 <input type="hidden" name="user-id" value="<?php echo $_SESSION['user']['ID'] ?>">
-                <input type="hidden" name="action" value="add-comment" id="btn" >
+                <input type="hidden" name="action" value="add-comment" >
             </form>
     <?php 
         }
