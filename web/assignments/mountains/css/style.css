@@ -150,11 +150,12 @@
         font-weight: bold;
         width: 75%;
         padding: 1em;
-        margin-bottom: 1em;
     }
     
     #comment .comment {
         background-color: white;
         margin-left: 2em;
         color: black;
+        padding: 1em;
+        border-radius: 5px;
     }
