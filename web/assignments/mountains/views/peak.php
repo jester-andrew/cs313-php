@@ -33,7 +33,7 @@
     ?>
     
     <?php 
-         if(isset($commentDsiplay) && $commentDsiplay != "<div></div>"){
+         if(isset($commentDsiplay) && $commentDsiplay != '<div id="comment"></div>'){
             echo "<h2>Comments</h2>";
             echo $commentDsiplay;
         }
