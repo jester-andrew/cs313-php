@@ -178,6 +178,10 @@
         padding-left: 0;
     }
     
+    #edit-peak ul {
+        margin-left: 0;
+    }
+    
     #edit-peak li {
         list-style: none;
         margin-bottom: 1em;
