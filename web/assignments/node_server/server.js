@@ -24,7 +24,7 @@ function handleResponse(req, resp) {
                     resp.end();
                 } else {
                     console.log(err);
-                    resp.writeHead(400, { "Content-Type": "text/html" });
+                    resp.writeHead(404, { "Content-Type": "text/html" });
                     resp.write("<h1>404 Page Not Found</h1>");
                     resp.end();
                 }
@@ -42,7 +42,7 @@ function handleResponse(req, resp) {
             break;
 
         default:
-            resp.writeHead(400, { "Content-Type": "text/html" });
+            resp.writeHead(404, { "Content-Type": "text/html" });
             resp.write("<h1>404 Page Not Found</h1>");
             resp.end();
             break;
